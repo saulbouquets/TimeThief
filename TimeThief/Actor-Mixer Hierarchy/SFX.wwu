@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{CE9E1CF1-BE97-4B8D-9EA2-9DE078EDDB3A}" SchemaVersion="97" RootDocumentID="{A46C4F32-BF19-43DF-886E-504829FFE1F8}">
+	<AudioObjects>
+		<WorkUnit Name="SFX" ID="{CE9E1CF1-BE97-4B8D-9EA2-9DE078EDDB3A}" OwnerID="{A46C4F32-BF19-43DF-886E-504829FFE1F8}" PersistMode="Nested">
+			<ChildrenList>
+				<ActorMixer Name="SFX_Actions" ID="{B2FEAEDB-817B-490C-B25E-AE109C386214}" ShortID="747635139">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0649292-23BA-439A-9C06-32C8FFEA14AF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2C660C76-A75B-498D-872D-486B302B7514}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<ActorMixer Name="SFX_Actions_Player" ID="{B0871369-C3EC-4AA4-9884-D8B3410798BE}" ShortID="34160325">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0649292-23BA-439A-9C06-32C8FFEA14AF}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2C660C76-A75B-498D-872D-486B302B7514}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="2Pop" ID="{D03C9A5F-7B0A-4474-A890-0A9E9D25FE17}" ShortID="122104062">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{F0649292-23BA-439A-9C06-32C8FFEA14AF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2C660C76-A75B-498D-872D-486B302B7514}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="2Pop" ID="{45814800-725A-4C0A-BC49-AC094592FB1B}">
+											<Language>SFX</Language>
+											<AudioFile>2Pop.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="557061201"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="2Pop" ID="{45814800-725A-4C0A-BC49-AC094592FB1B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</ActorMixer>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

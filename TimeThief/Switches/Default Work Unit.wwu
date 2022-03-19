@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{8C30667D-8902-4E75-8D25-7C2F851C9E99}" SchemaVersion="97">
+	<Switches>
+		<WorkUnit Name="Default Work Unit" ID="{8C30667D-8902-4E75-8D25-7C2F851C9E99}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Characters" ID="{93AB613A-80E1-47D2-B9B9-33A25BA8E755}">
+					<ChildrenList>
+						<Switch Name="Player" ID="{978971B4-6604-461A-9AA6-ABBDBBBAD809}"/>
+						<Switch Name="Enemy" ID="{D8171C60-BD94-4E96-8B35-D9E4749E38BA}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>
