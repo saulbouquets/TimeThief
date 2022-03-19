@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{0D1C409E-A735-471E-A538-63B18D993BE9}" SchemaVersion="97">
+<WwiseDocument Type="WorkUnit" ID="{0D1C409E-A735-471E-A538-63B18D993BE9}" SchemaVersion="103">
 	<Effects>
 		<WorkUnit Name="Factory Mastering Suite" ID="{0D1C409E-A735-471E-A538-63B18D993BE9}" PersistMode="Standalone">
 			<ChildrenList>
@@ -17,7 +17,8 @@
 						<Property Name="compressorBand4Attack" Type="Real32" Value="0.05"/>
 						<Property Name="compressorBand4Ratio" Type="Real32" Value="2"/>
 						<Property Name="compressorBand4Release" Type="Real32" Value="0.05"/>
-						<Property Name="limiterLinkChannels" Type="bool" Value="True"/>
+						<Property Name="compressorLinkMode" Type="int32" Value="0"/>
+						<Property Name="limiterLinkChannels" Type="bool" Value="False"/>
 						<Property Name="limiterMode" Type="int32" Value="2"/>
 						<Property Name="limiterThreshold" Type="Real32" Value="-1"/>
 						<Property Name="moduleEnableCompressor" Type="bool" Value="False"/>
@@ -29,6 +30,7 @@
 						<Property Name="paramBand6FilterMode" Type="int32" Value="4"/>
 						<Property Name="paramEqNumBands" Type="int32" Value="6"/>
 					</PropertyList>
+					<PluginData/>
 				</Effect>
 				<Effect Name="TV" ID="{37A77AC4-6D1C-4769-ADCA-9BF504A15C3E}" PluginName="Mastering Suite" CompanyID="0" PluginID="186" PluginType="3">
 					<PropertyList>
@@ -58,7 +60,6 @@
 						<Property Name="compressorCrossoverFrequency1" Type="Real32" Value="125"/>
 						<Property Name="compressorCrossoverFrequency2" Type="Real32" Value="468.3"/>
 						<Property Name="compressorCrossoverFrequency3" Type="Real32" Value="2648.5"/>
-						<Property Name="compressorLinkMode" Type="int32" Value="1"/>
 						<Property Name="limiterMode" Type="int32" Value="2"/>
 						<Property Name="limiterThreshold" Type="Real32" Value="-2"/>
 						<Property Name="paramBand1FilterMode" Type="int32" Value="2"/>
@@ -83,6 +84,7 @@
 						<Property Name="paramBand6Gain" Type="Real32" Value="1.99"/>
 						<Property Name="paramEqNumBands" Type="int32" Value="6"/>
 					</PropertyList>
+					<PluginData/>
 				</Effect>
 				<Effect Name="HomeCinema" ID="{F9951DC8-664E-4B07-81CF-61716236F00A}" PluginName="Mastering Suite" CompanyID="0" PluginID="186" PluginType="3">
 					<PropertyList>
@@ -113,6 +115,8 @@
 						<Property Name="compressorCrossoverFrequency1" Type="Real32" Value="125"/>
 						<Property Name="compressorCrossoverFrequency2" Type="Real32" Value="468.3"/>
 						<Property Name="compressorCrossoverFrequency3" Type="Real32" Value="2648.5"/>
+						<Property Name="compressorLinkMode" Type="int32" Value="0"/>
+						<Property Name="limiterLinkChannels" Type="bool" Value="False"/>
 						<Property Name="limiterMode" Type="int32" Value="2"/>
 						<Property Name="limiterRelease" Type="Real32" Value="0.3"/>
 						<Property Name="limiterThreshold" Type="Real32" Value="-1"/>
@@ -132,6 +136,7 @@
 						<Property Name="paramBand6Frequency" Type="Real32" Value="8500"/>
 						<Property Name="paramEqNumBands" Type="int32" Value="6"/>
 					</PropertyList>
+					<PluginData/>
 				</Effect>
 				<Effect Name="Headphones" ID="{E5116D0C-60E4-49B1-9BC3-00F4AEA2975F}" PluginName="Mastering Suite" CompanyID="0" PluginID="186" PluginType="3">
 					<PropertyList>
@@ -162,8 +167,6 @@
 						<Property Name="compressorCrossoverFrequency1" Type="Real32" Value="125"/>
 						<Property Name="compressorCrossoverFrequency2" Type="Real32" Value="468.3"/>
 						<Property Name="compressorCrossoverFrequency3" Type="Real32" Value="2648.5"/>
-						<Property Name="compressorLinkMode" Type="int32" Value="1"/>
-						<Property Name="limiterLinkChannels" Type="bool" Value="True"/>
 						<Property Name="limiterMode" Type="int32" Value="2"/>
 						<Property Name="limiterRelease" Type="Real32" Value="0.2988"/>
 						<Property Name="limiterThreshold" Type="Real32" Value="-2"/>
@@ -185,6 +188,7 @@
 						<Property Name="paramBand6Gain" Type="Real32" Value="1.08"/>
 						<Property Name="paramEqNumBands" Type="int32" Value="6"/>
 					</PropertyList>
+					<PluginData/>
 				</Effect>
 				<Effect Name="SoundBar" ID="{AACC9AF9-8FD9-4C5A-93F5-40CD904B57ED}" PluginName="Mastering Suite" CompanyID="0" PluginID="186" PluginType="3">
 					<PropertyList>
@@ -215,6 +219,8 @@
 						<Property Name="compressorCrossoverFrequency1" Type="Real32" Value="99.6"/>
 						<Property Name="compressorCrossoverFrequency2" Type="Real32" Value="226.2"/>
 						<Property Name="compressorCrossoverFrequency3" Type="Real32" Value="2648.5"/>
+						<Property Name="compressorLinkMode" Type="int32" Value="0"/>
+						<Property Name="limiterLinkChannels" Type="bool" Value="False"/>
 						<Property Name="limiterMode" Type="int32" Value="2"/>
 						<Property Name="limiterRelease" Type="Real32" Value="0.2988"/>
 						<Property Name="limiterThreshold" Type="Real32" Value="-2"/>
@@ -236,6 +242,7 @@
 						<Property Name="paramBand6Frequency" Type="Real32" Value="8500"/>
 						<Property Name="paramEqNumBands" Type="int32" Value="6"/>
 					</PropertyList>
+					<PluginData/>
 				</Effect>
 				<Effect Name="NightMode" ID="{D5363309-0217-46CF-86F9-6D8C2DDB9D42}" PluginName="Mastering Suite" CompanyID="0" PluginID="186" PluginType="3">
 					<PropertyList>
@@ -260,6 +267,8 @@
 						<Property Name="compressorBand4Release" Type="Real32" Value="0.05"/>
 						<Property Name="compressorBand4Threshold" Type="Real32" Value="-50"/>
 						<Property Name="compressorCrossoverFrequency1" Type="Real32" Value="149.1"/>
+						<Property Name="compressorLinkMode" Type="int32" Value="0"/>
+						<Property Name="limiterLinkChannels" Type="bool" Value="False"/>
 						<Property Name="limiterMode" Type="int32" Value="2"/>
 						<Property Name="limiterRelease" Type="Real32" Value="0.7136"/>
 						<Property Name="limiterThreshold" Type="Real32" Value="-7"/>
@@ -281,6 +290,7 @@
 						<Property Name="paramBand6Gain" Type="Real32" Value="0.56"/>
 						<Property Name="paramEqNumBands" Type="int32" Value="6"/>
 					</PropertyList>
+					<PluginData/>
 				</Effect>
 			</ChildrenList>
 		</WorkUnit>

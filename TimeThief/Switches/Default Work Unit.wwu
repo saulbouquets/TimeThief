@@ -1,12 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{8C30667D-8902-4E75-8D25-7C2F851C9E99}" SchemaVersion="97">
+<WwiseDocument Type="WorkUnit" ID="{CB01629D-BB33-4F08-81D4-0BFA90A28AAB}" SchemaVersion="103">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{8C30667D-8902-4E75-8D25-7C2F851C9E99}" PersistMode="Standalone">
+		<WorkUnit Name="Default Work Unit" ID="{CB01629D-BB33-4F08-81D4-0BFA90A28AAB}" PersistMode="Standalone">
 			<ChildrenList>
-				<SwitchGroup Name="Characters" ID="{93AB613A-80E1-47D2-B9B9-33A25BA8E755}">
+				<SwitchGroup Name="Footsteps" ID="{03D2A97F-A0AA-45C9-B543-B977334A0AF5}">
 					<ChildrenList>
-						<Switch Name="Player" ID="{978971B4-6604-461A-9AA6-ABBDBBBAD809}"/>
-						<Switch Name="Enemy" ID="{D8171C60-BD94-4E96-8B35-D9E4749E38BA}"/>
+						<Switch Name="Enemies" ID="{D46668F0-DA73-426F-B223-BC3E5FCB9804}"/>
+						<Switch Name="Player" ID="{9A92C169-93BC-4AEE-A2FC-2BBAE4F1FEE6}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Weapon" ID="{B1E96C49-DBF1-4FC2-9A08-5B4C37454BB8}">
+					<ChildrenList>
+						<Switch Name="Normal" ID="{F517C692-1255-4E42-B9D7-68D8143740D3}"/>
+						<Switch Name="Special" ID="{4780A80E-FB24-48BE-96AE-B7F3AEA3014F}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Suction" ID="{013FD523-D231-4CF9-8A81-AFF2A4E2F809}">
+					<ChildrenList>
+						<Switch Name="Loop" ID="{7E094AC4-1935-4F91-BBA4-9E98D38563CB}"/>
+						<Switch Name="Complete" ID="{C4CBF348-19F0-461A-A4EA-AA995732915E}"/>
+						<Switch Name="Failed" ID="{AA840BEC-FA83-4B10-B621-9B7B23DAD145}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Time" ID="{72D266F5-57C2-4B19-B649-8368DC7FAEB3}">
+					<ChildrenList>
+						<Switch Name="Slow" ID="{D86126AF-EC13-4D33-9864-2B088B084EF6}"/>
+						<Switch Name="Fast" ID="{AF69EDCC-EC9B-4243-BEE3-5F04C5741DCF}"/>
 					</ChildrenList>
 				</SwitchGroup>
 			</ChildrenList>

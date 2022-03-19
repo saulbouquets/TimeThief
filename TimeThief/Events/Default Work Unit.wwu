@@ -1,21 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{BE1ABAC1-9939-4A61-A542-D938AEDE3058}" SchemaVersion="97">
+<WwiseDocument Type="WorkUnit" ID="{5213C5D9-6C98-4B09-8041-06A36838DC23}" SchemaVersion="103">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{BE1ABAC1-9939-4A61-A542-D938AEDE3058}" PersistMode="Standalone">
+		<WorkUnit Name="Default Work Unit" ID="{5213C5D9-6C98-4B09-8041-06A36838DC23}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Footsteps" ID="{2543CADC-0326-4F35-BB77-5B85F184552E}"/>
-				<Event Name="Weapons" ID="{55194080-BE32-4D7D-B81B-41CB069D4DD7}"/>
-				<Event Name="Testing" ID="{DC528939-AC18-4754-8EC8-8E6F09ADFE09}">
-					<ChildrenList>
-						<Action Name="" ID="{02B89F29-8CD3-470A-899B-917261D09AB4}" ShortID="195995774">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="2Pop" ID="{D03C9A5F-7B0A-4474-A890-0A9E9D25FE17}" WorkUnitID="{CE9E1CF1-BE97-4B8D-9EA2-9DE078EDDB3A}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
+				<Event Name="Movement_Footsteps" ID="{3A6559A6-4DAD-4497-B030-591A042BB19F}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
