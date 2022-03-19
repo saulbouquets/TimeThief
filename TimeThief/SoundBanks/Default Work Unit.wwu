@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{C9893471-8F76-4EF8-BC71-91D96B5BEE8D}" SchemaVersion="103">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{C9893471-8F76-4EF8-BC71-91D96B5BEE8D}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{C9893471-8F76-4EF8-BC71-91D96B5BEE8D}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="TimeThief" ID="{9BA1BADA-3BEB-4319-8A87-9A28F3849673}">
+					<ObjectInclusionList/>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>
