@@ -4,7 +4,9 @@
 		<WorkUnit Name="Default Work Unit" ID="{C9893471-8F76-4EF8-BC71-91D96B5BEE8D}" PersistMode="Standalone">
 			<ChildrenList>
 				<SoundBank Name="TimeThief" ID="{9BA1BADA-3BEB-4319-8A87-9A28F3849673}">
-					<ObjectInclusionList/>
+					<ObjectInclusionList>
+						<ObjectRef Name="Events" ID="{A69BF0FC-D84A-487C-ABDD-56F71CB2A126}" WorkUnitID="{A69BF0FC-D84A-487C-ABDD-56F71CB2A126}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>

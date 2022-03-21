@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{510A1D9A-06D3-44CB-B8F2-A4C7712B85E0}" SchemaVersion="103">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{510A1D9A-06D3-44CB-B8F2-A4C7712B85E0}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{510A1D9A-06D3-44CB-B8F2-A4C7712B85E0}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="TimeLapse" ID="{453D235D-CB10-4F5C-90F1-236F928A275B}">
+					<ChildrenList>
+						<State Name="None" ID="{6A939EA3-D0C7-4FBE-B49E-B88D82EB6265}"/>
+						<State Name="Fast" ID="{EDAC0C4D-326F-4D36-AA63-E214E71F4920}"/>
+						<State Name="Slow" ID="{123132B6-477B-4FB6-90C3-B1929620D748}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

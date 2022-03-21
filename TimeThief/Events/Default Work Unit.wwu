@@ -3,7 +3,43 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{5213C5D9-6C98-4B09-8041-06A36838DC23}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Movement_Footsteps" ID="{3A6559A6-4DAD-4497-B030-591A042BB19F}"/>
+				<Folder Name="SFX" ID="{9BA8C35C-46D9-45C7-AC22-359DAD8CDBF4}" ShortID="781835824">
+					<ChildrenList>
+						<Event Name="Movement" ID="{3A6559A6-4DAD-4497-B030-591A042BB19F}">
+							<ChildrenList>
+								<Action Name="" ID="{DE84DDB8-1807-4A27-897C-B651CC38045F}" ShortID="442319654">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_Movement" ID="{10BE9B7D-1C00-4AC0-B03F-99B28B9DEEDA}" WorkUnitID="{E8312D27-F350-4162-97C9-DB0D9170DBD9}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Weapon" ID="{752180BC-5A5D-4C3E-87FF-0D251911613F}">
+							<ChildrenList>
+								<Action Name="" ID="{D149C32B-F1FF-4DD0-A80E-0F07E3F3ABF5}" ShortID="866967669">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_Weapon" ID="{0B2C68A1-E87C-450B-9F5F-4F3F194EAEC0}" WorkUnitID="{E8312D27-F350-4162-97C9-DB0D9170DBD9}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Impact" ID="{9EB67D09-D3C0-49E1-86BA-7969879F3B1C}">
+							<ChildrenList>
+								<Action Name="" ID="{57F552E3-17EC-43C0-9B12-B4BCC23DD780}" ShortID="122389570">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_Impacts_Surfaces" ID="{47F24BA5-7770-4055-BFF7-3E4468CE790D}" WorkUnitID="{E8312D27-F350-4162-97C9-DB0D9170DBD9}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -11,18 +11,216 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1958929096">
+		<SoundBank Id="1355168291" Language="SFX" Hash="595801560">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3936692810" Language="SFX" Hash="1817006038">
+		<SoundBank Id="3936692810" Language="SFX" Hash="2713192378">
 			<ObjectPath>\SoundBanks\Default Work Unit\TimeThief</ObjectPath>
 			<ShortName>TimeThief</ShortName>
 			<Path>TimeThief.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2187416818" Name="Movement_Footsteps" ObjectPath="\Events\Default Work Unit\Movement_Footsteps"/>
+				<Event Id="3257506471" Name="Impact" ObjectPath="\Events\Default Work Unit\SFX\Impact">
+					<DefaultSwitchValue>{9995C882-0C8A-4CDB-A846-3B5CEF751E3D}</DefaultSwitchValue>
+					<SwitchContainers/>
+				</Event>
+				<Event Id="2129636626" Name="Movement" ObjectPath="\Events\Default Work Unit\SFX\Movement">
+					<IncludedMemoryFiles>
+						<File Id="53378789" Language="SFX">
+							<ShortName>SFX_Footsteps\SFX_Footsteps_Enemies\SFX_Movement_Enemies_Walk_Metal_01.wav</ShortName>
+							<Path>SFX/SFX_Footsteps/SFX_Footsteps_Enemies/SFX_Movement_Enemies_Walk_Metal_01_10C4C929.wem</Path>
+						</File>
+						<File Id="82735208" Language="SFX">
+							<ShortName>SFX_Footsteps\SFX_Footsteps_Player\SFX_Movement_Player_Walk_Metal_09.wav</ShortName>
+							<Path>SFX/SFX_Footsteps/SFX_Footsteps_Player/SFX_Movement_Player_Walk_Metal_09_10C4C929.wem</Path>
+						</File>
+						<File Id="96892871" Language="SFX">
+							<ShortName>SFX_Footsteps\SFX_Footsteps_Enemies\SFX_Movement_Enemies_Walk_Metal_03.wav</ShortName>
+							<Path>SFX/SFX_Footsteps/SFX_Footsteps_Enemies/SFX_Movement_Enemies_Walk_Metal_03_10C4C929.wem</Path>
+						</File>
+						<File Id="111680307" Language="SFX">
+							<ShortName>SFX_Footsteps\SFX_Footsteps_Enemies\SFX_Movement_Enemies_Walk_Metal_09.wav</ShortName>
+							<Path>SFX/SFX_Footsteps/SFX_Footsteps_Enemies/SFX_Movement_Enemies_Walk_Metal_09_10C4C929.wem</Path>
+						</File>
+						<File Id="141259207" Language="SFX">
+							<ShortName>SFX_Footsteps\SFX_Footsteps_Enemies\SFX_Movement_Enemies_Walk_Metal_04.wav</ShortName>
+							<Path>SFX/SFX_Footsteps/SFX_Footsteps_Enemies/SFX_Movement_Enemies_Walk_Metal_04_10C4C929.wem</Path>
+						</File>
+						<File Id="163331611" Language="SFX">
+							<ShortName>SFX_Footsteps\SFX_Footsteps_Player\SFX_Movement_Player_Walk_Metal_06.wav</ShortName>
+							<Path>SFX/SFX_Footsteps/SFX_Footsteps_Player/SFX_Movement_Player_Walk_Metal_06_10C4C929.wem</Path>
+						</File>
+						<File Id="220221295" Language="SFX">
+							<ShortName>SFX_Footsteps\SFX_Footsteps_Enemies\SFX_Movement_Enemies_Walk_Metal_02.wav</ShortName>
+							<Path>SFX/SFX_Footsteps/SFX_Footsteps_Enemies/SFX_Movement_Enemies_Walk_Metal_02_10C4C929.wem</Path>
+						</File>
+						<File Id="232311037" Language="SFX">
+							<ShortName>SFX_Footsteps\SFX_Footsteps_Player\SFX_Movement_Player_Walk_Metal_05.wav</ShortName>
+							<Path>SFX/SFX_Footsteps/SFX_Footsteps_Player/SFX_Movement_Player_Walk_Metal_05_10C4C929.wem</Path>
+						</File>
+						<File Id="353051995" Language="SFX">
+							<ShortName>SFX_Footsteps\SFX_Footsteps_Player\SFX_Movement_Player_Walk_Metal_01.wav</ShortName>
+							<Path>SFX/SFX_Footsteps/SFX_Footsteps_Player/SFX_Movement_Player_Walk_Metal_01_10C4C929.wem</Path>
+						</File>
+						<File Id="386688991" Language="SFX">
+							<ShortName>SFX_Footsteps\SFX_Footsteps_Player\SFX_Movement_Player_Walk_Metal_07.wav</ShortName>
+							<Path>SFX/SFX_Footsteps/SFX_Footsteps_Player/SFX_Movement_Player_Walk_Metal_07_10C4C929.wem</Path>
+						</File>
+						<File Id="491012235" Language="SFX">
+							<ShortName>SFX_Footsteps\SFX_Footsteps_Enemies\SFX_Movement_Enemies_Walk_Metal_07.wav</ShortName>
+							<Path>SFX/SFX_Footsteps/SFX_Footsteps_Enemies/SFX_Movement_Enemies_Walk_Metal_07_10C4C929.wem</Path>
+						</File>
+						<File Id="493534952" Language="SFX">
+							<ShortName>SFX_Footsteps\SFX_Footsteps_Enemies\SFX_Movement_Enemies_Walk_Metal_10.wav</ShortName>
+							<Path>SFX/SFX_Footsteps/SFX_Footsteps_Enemies/SFX_Movement_Enemies_Walk_Metal_10_10C4C929.wem</Path>
+						</File>
+						<File Id="567206997" Language="SFX">
+							<ShortName>SFX_Footsteps\SFX_Footsteps_Player\SFX_Movement_Player_Walk_Metal_08.wav</ShortName>
+							<Path>SFX/SFX_Footsteps/SFX_Footsteps_Player/SFX_Movement_Player_Walk_Metal_08_10C4C929.wem</Path>
+						</File>
+						<File Id="637720635" Language="SFX">
+							<ShortName>SFX_Footsteps\SFX_Footsteps_Enemies\SFX_Movement_Enemies_Walk_Metal_06.wav</ShortName>
+							<Path>SFX/SFX_Footsteps/SFX_Footsteps_Enemies/SFX_Movement_Enemies_Walk_Metal_06_10C4C929.wem</Path>
+						</File>
+						<File Id="673866557" Language="SFX">
+							<ShortName>SFX_Footsteps\SFX_Footsteps_Player\SFX_Movement_Player_Walk_Metal_02.wav</ShortName>
+							<Path>SFX/SFX_Footsteps/SFX_Footsteps_Player/SFX_Movement_Player_Walk_Metal_02_10C4C929.wem</Path>
+						</File>
+						<File Id="707267067" Language="SFX">
+							<ShortName>SFX_Footsteps\SFX_Footsteps_Player\SFX_Movement_Player_Walk_Metal_04.wav</ShortName>
+							<Path>SFX/SFX_Footsteps/SFX_Footsteps_Player/SFX_Movement_Player_Walk_Metal_04_10C4C929.wem</Path>
+						</File>
+						<File Id="716952085" Language="SFX">
+							<ShortName>SFX_Footsteps\SFX_Footsteps_Enemies\SFX_Movement_Enemies_Walk_Metal_08.wav</ShortName>
+							<Path>SFX/SFX_Footsteps/SFX_Footsteps_Enemies/SFX_Movement_Enemies_Walk_Metal_08_10C4C929.wem</Path>
+						</File>
+						<File Id="781648017" Language="SFX">
+							<ShortName>SFX_Footsteps\SFX_Footsteps_Player\SFX_Movement_Player_Walk_Metal_03.wav</ShortName>
+							<Path>SFX/SFX_Footsteps/SFX_Footsteps_Player/SFX_Movement_Player_Walk_Metal_03_10C4C929.wem</Path>
+						</File>
+						<File Id="1018691115" Language="SFX">
+							<ShortName>SFX_Footsteps\SFX_Footsteps_Enemies\SFX_Movement_Enemies_Walk_Metal_05.wav</ShortName>
+							<Path>SFX/SFX_Footsteps/SFX_Footsteps_Enemies/SFX_Movement_Enemies_Walk_Metal_05_10C4C929.wem</Path>
+						</File>
+						<File Id="1067209122" Language="SFX">
+							<ShortName>SFX_Footsteps\SFX_Footsteps_Player\SFX_Movement_Player_Walk_Metal_10.wav</ShortName>
+							<Path>SFX/SFX_Footsteps/SFX_Footsteps_Player/SFX_Movement_Player_Walk_Metal_10_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{103A0212-EF68-4219-A4B7-3C1B4D1A510D}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{103A0212-EF68-4219-A4B7-3C1B4D1A510D}">
+							<DefaultSwitchValue>{D04D6272-674F-45B3-9326-A19591AE61B7}</DefaultSwitchValue>
+							<Children>
+								<SwitchContainer SwitchValue="{D04D6272-674F-45B3-9326-A19591AE61B7}">
+									<DefaultSwitchValue>{9995C882-0C8A-4CDB-A846-3B5CEF751E3D}</DefaultSwitchValue>
+									<Children>
+										<SwitchContainer SwitchValue="{9995C882-0C8A-4CDB-A846-3B5CEF751E3D}">
+											<Media>
+												<File Id="82735208"/>
+												<File Id="163331611"/>
+												<File Id="232311037"/>
+												<File Id="353051995"/>
+												<File Id="386688991"/>
+												<File Id="567206997"/>
+												<File Id="673866557"/>
+												<File Id="707267067"/>
+												<File Id="781648017"/>
+												<File Id="1067209122"/>
+											</Media>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{E8532D9A-89D4-4C1A-9C72-BC7258D2F73B}">
+							<DefaultSwitchValue>{D04D6272-674F-45B3-9326-A19591AE61B7}</DefaultSwitchValue>
+							<Children>
+								<SwitchContainer SwitchValue="{D04D6272-674F-45B3-9326-A19591AE61B7}">
+									<DefaultSwitchValue>{9995C882-0C8A-4CDB-A846-3B5CEF751E3D}</DefaultSwitchValue>
+									<Children>
+										<SwitchContainer SwitchValue="{9995C882-0C8A-4CDB-A846-3B5CEF751E3D}">
+											<Media>
+												<File Id="53378789"/>
+												<File Id="96892871"/>
+												<File Id="111680307"/>
+												<File Id="141259207"/>
+												<File Id="220221295"/>
+												<File Id="491012235"/>
+												<File Id="493534952"/>
+												<File Id="637720635"/>
+												<File Id="716952085"/>
+												<File Id="1018691115"/>
+											</Media>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="3893417221" Name="Weapon" ObjectPath="\Events\Default Work Unit\SFX\Weapon">
+					<DefaultSwitchValue>{103A0212-EF68-4219-A4B7-3C1B4D1A510D}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{103A0212-EF68-4219-A4B7-3C1B4D1A510D}">
+							<DefaultSwitchValue>{F517C692-1255-4E42-B9D7-68D8143740D3}</DefaultSwitchValue>
+							<Children>
+								<SwitchContainer SwitchValue="{6F3546CB-C72C-49FA-82CC-37C0C7ADB69D}">
+									<DefaultSwitchValue>{7E094AC4-1935-4F91-BBA4-9E98D38563CB}</DefaultSwitchValue>
+									<Children/>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{E8532D9A-89D4-4C1A-9C72-BC7258D2F73B}">
+							<DefaultSwitchValue>{F517C692-1255-4E42-B9D7-68D8143740D3}</DefaultSwitchValue>
+							<Children>
+								<SwitchContainer SwitchValue="{6F3546CB-C72C-49FA-82CC-37C0C7ADB69D}">
+									<DefaultSwitchValue>{7E094AC4-1935-4F91-BBA4-9E98D38563CB}</DefaultSwitchValue>
+									<Children/>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
 			</IncludedEvents>
+			<SwitchGroups>
+				<SwitchGroup Id="143205294" Name="Suction" ObjectPath="\Switches\Default Work Unit\Suction" GUID="{013FD523-D231-4CF9-8A81-AFF2A4E2F809}">
+					<Switches>
+						<Switch Id="691006007" Name="Loop" ObjectPath="\Switches\Default Work Unit\Suction\Loop" GUID="{7E094AC4-1935-4F91-BBA4-9E98D38563CB}"/>
+						<Switch Id="2631133988" Name="Complete" ObjectPath="\Switches\Default Work Unit\Suction\Complete" GUID="{C4CBF348-19F0-461A-A4EA-AA995732915E}"/>
+						<Switch Id="1655200910" Name="Failed" ObjectPath="\Switches\Default Work Unit\Suction\Failed" GUID="{AA840BEC-FA83-4B10-B621-9B7B23DAD145}"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="436743010" Name="Character" ObjectPath="\Switches\Default Work Unit\Character" GUID="{472ACB58-60A0-40B6-BAC4-4086E60C27D2}">
+					<Switches>
+						<Switch Id="1069431850" Name="Player" ObjectPath="\Switches\Default Work Unit\Character\Player" GUID="{103A0212-EF68-4219-A4B7-3C1B4D1A510D}"/>
+						<Switch Id="2242381963" Name="Enemies" ObjectPath="\Switches\Default Work Unit\Character\Enemies" GUID="{E8532D9A-89D4-4C1A-9C72-BC7258D2F73B}"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="2129636626" Name="Movement" ObjectPath="\Switches\Default Work Unit\Movement" GUID="{EAC1706A-036D-404E-904A-123EED26E037}">
+					<Switches>
+						<Switch Id="1799292946" Name="Dodge" ObjectPath="\Switches\Default Work Unit\Movement\Dodge" GUID="{E9A5E1E4-7C88-4625-8B2C-E0B2DBF8E400}"/>
+						<Switch Id="2108779966" Name="Walk" ObjectPath="\Switches\Default Work Unit\Movement\Walk" GUID="{D04D6272-674F-45B3-9326-A19591AE61B7}"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="3714303081" Name="Surfaces" ObjectPath="\Switches\Default Work Unit\Surfaces" GUID="{9F9F3B74-61E8-4D75-BB49-1D346812146C}">
+					<Switches>
+						<Switch Id="1216965916" Name="Stone" ObjectPath="\Switches\Default Work Unit\Surfaces\Stone" GUID="{B78C1FBF-A017-4573-BEBA-4294B258CC0A}"/>
+						<Switch Id="2058049674" Name="Wood" ObjectPath="\Switches\Default Work Unit\Surfaces\Wood" GUID="{640794D2-A266-43AD-A786-27627D953CCC}"/>
+						<Switch Id="2473969246" Name="Metal" ObjectPath="\Switches\Default Work Unit\Surfaces\Metal" GUID="{9995C882-0C8A-4CDB-A846-3B5CEF751E3D}"/>
+						<Switch Id="2195636714" Name="Dirt" ObjectPath="\Switches\Default Work Unit\Surfaces\Dirt" GUID="{84450B47-B8A0-4392-AF8F-1E4B42B38D42}"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="3893417221" Name="Weapon" ObjectPath="\Switches\Default Work Unit\Weapon" GUID="{B1E96C49-DBF1-4FC2-9A08-5B4C37454BB8}">
+					<Switches>
+						<Switch Id="3752496941" Name="NormalShoot" ObjectPath="\Switches\Default Work Unit\Weapon\NormalShoot" GUID="{F517C692-1255-4E42-B9D7-68D8143740D3}"/>
+						<Switch Id="1740378383" Name="SpecialShoot" ObjectPath="\Switches\Default Work Unit\Weapon\SpecialShoot" GUID="{4780A80E-FB24-48BE-96AE-B7F3AEA3014F}"/>
+						<Switch Id="3354297748" Name="Empty" ObjectPath="\Switches\Default Work Unit\Weapon\Empty" GUID="{1AEE23B6-CDA4-4B90-A7CF-68B71FE0F62A}"/>
+						<Switch Id="143205294" Name="Suction" ObjectPath="\Switches\Default Work Unit\Weapon\Suction" GUID="{6F3546CB-C72C-49FA-82CC-37C0C7ADB69D}"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

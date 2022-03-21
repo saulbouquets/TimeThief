@@ -3,16 +3,12 @@
 	<Switches>
 		<WorkUnit Name="Default Work Unit" ID="{CB01629D-BB33-4F08-81D4-0BFA90A28AAB}" PersistMode="Standalone">
 			<ChildrenList>
-				<SwitchGroup Name="Footsteps" ID="{03D2A97F-A0AA-45C9-B543-B977334A0AF5}">
-					<ChildrenList>
-						<Switch Name="Enemies" ID="{D46668F0-DA73-426F-B223-BC3E5FCB9804}"/>
-						<Switch Name="Player" ID="{9A92C169-93BC-4AEE-A2FC-2BBAE4F1FEE6}"/>
-					</ChildrenList>
-				</SwitchGroup>
 				<SwitchGroup Name="Weapon" ID="{B1E96C49-DBF1-4FC2-9A08-5B4C37454BB8}">
 					<ChildrenList>
-						<Switch Name="Normal" ID="{F517C692-1255-4E42-B9D7-68D8143740D3}"/>
-						<Switch Name="Special" ID="{4780A80E-FB24-48BE-96AE-B7F3AEA3014F}"/>
+						<Switch Name="NormalShoot" ID="{F517C692-1255-4E42-B9D7-68D8143740D3}"/>
+						<Switch Name="SpecialShoot" ID="{4780A80E-FB24-48BE-96AE-B7F3AEA3014F}"/>
+						<Switch Name="Empty" ID="{1AEE23B6-CDA4-4B90-A7CF-68B71FE0F62A}"/>
+						<Switch Name="Suction" ID="{6F3546CB-C72C-49FA-82CC-37C0C7ADB69D}"/>
 					</ChildrenList>
 				</SwitchGroup>
 				<SwitchGroup Name="Suction" ID="{013FD523-D231-4CF9-8A81-AFF2A4E2F809}">
@@ -22,10 +18,24 @@
 						<Switch Name="Failed" ID="{AA840BEC-FA83-4B10-B621-9B7B23DAD145}"/>
 					</ChildrenList>
 				</SwitchGroup>
-				<SwitchGroup Name="Time" ID="{72D266F5-57C2-4B19-B649-8368DC7FAEB3}">
+				<SwitchGroup Name="Surfaces" ID="{9F9F3B74-61E8-4D75-BB49-1D346812146C}">
 					<ChildrenList>
-						<Switch Name="Slow" ID="{D86126AF-EC13-4D33-9864-2B088B084EF6}"/>
-						<Switch Name="Fast" ID="{AF69EDCC-EC9B-4243-BEE3-5F04C5741DCF}"/>
+						<Switch Name="Stone" ID="{B78C1FBF-A017-4573-BEBA-4294B258CC0A}"/>
+						<Switch Name="Wood" ID="{640794D2-A266-43AD-A786-27627D953CCC}"/>
+						<Switch Name="Metal" ID="{9995C882-0C8A-4CDB-A846-3B5CEF751E3D}"/>
+						<Switch Name="Dirt" ID="{84450B47-B8A0-4392-AF8F-1E4B42B38D42}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Character" ID="{472ACB58-60A0-40B6-BAC4-4086E60C27D2}">
+					<ChildrenList>
+						<Switch Name="Player" ID="{103A0212-EF68-4219-A4B7-3C1B4D1A510D}"/>
+						<Switch Name="Enemies" ID="{E8532D9A-89D4-4C1A-9C72-BC7258D2F73B}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Movement" ID="{EAC1706A-036D-404E-904A-123EED26E037}">
+					<ChildrenList>
+						<Switch Name="Dodge" ID="{E9A5E1E4-7C88-4625-8B2C-E0B2DBF8E400}"/>
+						<Switch Name="Walk" ID="{D04D6272-674F-45B3-9326-A19591AE61B7}"/>
 					</ChildrenList>
 				</SwitchGroup>
 			</ChildrenList>

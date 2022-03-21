@@ -13,7 +13,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<ActorMixer Name="SFX_Player" ID="{A27F08B2-266C-4A68-8694-DDCA0FFD5A3A}" ShortID="779485711">
+						<ActorMixer Name="SFX_Weapon" ID="{A27F08B2-266C-4A68-8694-DDCA0FFD5A3A}" ShortID="779485711">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
@@ -23,62 +23,54 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<ActorMixer Name="SFX_Player_Movement" ID="{F05A95C6-1184-4FC7-B5B6-CFDBE6E06EE8}" ShortID="807694935">
+								<SwitchContainer Name="SFX_Weapon" ID="{0B2C68A1-E87C-450B-9F5F-4F3F194EAEC0}" ShortID="209451145">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
 										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<ActorMixer Name="SFX_Player_Movement_Footsteps" ID="{B2259A82-DF2D-471D-B503-44D5B427E433}" ShortID="175755086">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
-												</Reference>
-											</ReferenceList>
-											<ObjectLists/>
-										</ActorMixer>
-										<ActorMixer Name="SFX_Player_Movement_Dodge" ID="{E42ABA0E-B9A6-4CB3-9946-A3604B495302}" ShortID="442786814">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
-												</Reference>
-											</ReferenceList>
-											<ObjectLists/>
-										</ActorMixer>
-									</ChildrenList>
-									<ObjectLists/>
-								</ActorMixer>
-								<ActorMixer Name="SFX_Player_Weapon" ID="{AA1D0304-8D48-4B08-8157-9A9C817A816A}" ShortID="131892725">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="Player" ID="{103A0212-EF68-4219-A4B7-3C1B4D1A510D}" WorkUnitID="{CB01629D-BB33-4F08-81D4-0BFA90A28AAB}"/>
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
 										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Character" ID="{472ACB58-60A0-40B6-BAC4-4086E60C27D2}" WorkUnitID="{CB01629D-BB33-4F08-81D4-0BFA90A28AAB}"/>
+										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<ActorMixer Name="SFX_Player_Weapon_Shoot" ID="{DD8BE04C-2009-413A-9B3E-EAA0B3065EE5}" ShortID="872815347">
+										<SwitchContainer Name="SFX_Weapon_Player" ID="{288C8AE0-3249-4F07-804A-6294AB9C100C}" ShortID="768680591">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
 												</Reference>
+												<Reference Name="DefaultSwitchOrState">
+													<ObjectRef Name="NormalShoot" ID="{F517C692-1255-4E42-B9D7-68D8143740D3}" WorkUnitID="{CB01629D-BB33-4F08-81D4-0BFA90A28AAB}"/>
+												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="Weapon" ID="{B1E96C49-DBF1-4FC2-9A08-5B4C37454BB8}" WorkUnitID="{CB01629D-BB33-4F08-81D4-0BFA90A28AAB}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<ActorMixer Name="SFX_Player_Weapon_Shoot_Normal" ID="{82B6279D-E5CE-4A7E-B8A2-FDD1709AF692}" ShortID="1049958496">
+												<RandomSequenceContainer Name="SFX_Weapon_Player_Empty" ID="{F18AC17F-7CA0-41CA-8B96-902BDD3EF096}" ShortID="441028342">
+													<PropertyList>
+														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{463A080F-F75D-421C-A2F5-1B89409C6184}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="300"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
@@ -88,8 +80,23 @@
 														</Reference>
 													</ReferenceList>
 													<ObjectLists/>
-												</ActorMixer>
-												<ActorMixer Name="SFX_Player_Weapon_Shoot_Special" ID="{E0D62391-16E3-492B-B005-6D9FFA93BA2C}" ShortID="336012351">
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="SFX_Weapon_Player_Shoot_Normal" ID="{EA036C54-572C-4503-9C9E-9737C01F9D6B}" ShortID="582243592">
+													<PropertyList>
+														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{8D6486F7-B4CA-42A5-AFAA-9BEE6F94850C}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="300"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
@@ -99,32 +106,240 @@
 														</Reference>
 													</ReferenceList>
 													<ObjectLists/>
-												</ActorMixer>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="SFX_Weapon_Player_Shoot_Special" ID="{D468595A-D296-41DD-9F71-074DA97BAA7E}" ShortID="232689077">
+													<PropertyList>
+														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{EC8BEA9D-C8F6-43BD-88C3-7FBB8F485FF2}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="300"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
+														</Reference>
+													</ReferenceList>
+													<ObjectLists/>
+												</RandomSequenceContainer>
+												<SwitchContainer Name="SFX_Weapon_Player_Suction" ID="{93287432-55F3-4633-8BCA-C7CEE0A77C6D}" ShortID="98728257">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
+														</Reference>
+														<Reference Name="DefaultSwitchOrState">
+															<ObjectRef Name="Loop" ID="{7E094AC4-1935-4F91-BBA4-9E98D38563CB}" WorkUnitID="{CB01629D-BB33-4F08-81D4-0BFA90A28AAB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
+														</Reference>
+														<Reference Name="SwitchGroupOrStateGroup">
+															<ObjectRef Name="Suction" ID="{013FD523-D231-4CF9-8A81-AFF2A4E2F809}" WorkUnitID="{CB01629D-BB33-4F08-81D4-0BFA90A28AAB}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<RandomSequenceContainer Name="SFX_Weapon_Player_Suction_Failed" ID="{700FDB02-CCBA-4F02-BE7F-4110338DCAEE}" ShortID="646269393">
+															<PropertyList>
+																<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+																<Property Name="Pitch" Type="int32">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{FA58CBBD-BF54-45E3-BC66-548D7BEAED4A}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Max" Type="Real64" Value="300"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
+																</Reference>
+															</ReferenceList>
+															<ObjectLists/>
+														</RandomSequenceContainer>
+														<RandomSequenceContainer Name="SFX_Weapon_Player_Suction_Loop" ID="{28FB59CD-5800-4D21-B1C4-F03E3995D101}" ShortID="429193704">
+															<PropertyList>
+																<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+																<Property Name="Pitch" Type="int32">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{2F9E9C04-5D04-4666-A639-C78249609143}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Max" Type="Real64" Value="300"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
+																</Reference>
+															</ReferenceList>
+															<ObjectLists/>
+														</RandomSequenceContainer>
+														<RandomSequenceContainer Name="SFX_Weapon_Player_Suction_Complete" ID="{A04E3F8F-DA83-494E-9D6B-8460B54E675D}" ShortID="46094794">
+															<PropertyList>
+																<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+																<Property Name="Pitch" Type="int32">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{4B7EDD86-ECE5-4C9F-856D-A389B697BDE4}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Max" Type="Real64" Value="300"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
+																</Reference>
+															</ReferenceList>
+															<ObjectLists/>
+														</RandomSequenceContainer>
+													</ChildrenList>
+													<ObjectLists/>
+													<GroupingInfo>
+														<GroupingBehaviorList>
+															<GroupingBehavior>
+																<ItemRef Name="SFX_Weapon_Player_Suction_Failed" ID="{700FDB02-CCBA-4F02-BE7F-4110338DCAEE}"/>
+															</GroupingBehavior>
+															<GroupingBehavior>
+																<ItemRef Name="SFX_Weapon_Player_Suction_Complete" ID="{A04E3F8F-DA83-494E-9D6B-8460B54E675D}"/>
+															</GroupingBehavior>
+															<GroupingBehavior>
+																<ItemRef Name="SFX_Weapon_Player_Suction_Loop" ID="{28FB59CD-5800-4D21-B1C4-F03E3995D101}"/>
+															</GroupingBehavior>
+														</GroupingBehaviorList>
+														<GroupingList>
+															<Grouping>
+																<SwitchRef Name="Complete" ID="{C4CBF348-19F0-461A-A4EA-AA995732915E}"/>
+																<ItemList>
+																	<ItemRef Name="SFX_Weapon_Player_Suction_Complete" ID="{A04E3F8F-DA83-494E-9D6B-8460B54E675D}"/>
+																</ItemList>
+															</Grouping>
+															<Grouping>
+																<SwitchRef Name="Loop" ID="{7E094AC4-1935-4F91-BBA4-9E98D38563CB}"/>
+																<ItemList>
+																	<ItemRef Name="SFX_Weapon_Player_Suction_Loop" ID="{28FB59CD-5800-4D21-B1C4-F03E3995D101}"/>
+																</ItemList>
+															</Grouping>
+															<Grouping>
+																<SwitchRef Name="Failed" ID="{AA840BEC-FA83-4B10-B621-9B7B23DAD145}"/>
+																<ItemList>
+																	<ItemRef Name="SFX_Weapon_Player_Suction_Failed" ID="{700FDB02-CCBA-4F02-BE7F-4110338DCAEE}"/>
+																</ItemList>
+															</Grouping>
+														</GroupingList>
+													</GroupingInfo>
+												</SwitchContainer>
 											</ChildrenList>
 											<ObjectLists/>
-										</ActorMixer>
-										<ActorMixer Name="SFX_Player_Weapon_Empty" ID="{AEF9060B-6ACD-4C8F-939B-1B7C3710F656}" ShortID="846137213">
+											<GroupingInfo>
+												<GroupingBehaviorList>
+													<GroupingBehavior>
+														<ItemRef Name="SFX_Weapon_Player_Suction" ID="{93287432-55F3-4633-8BCA-C7CEE0A77C6D}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="SFX_Weapon_Player_Shoot_Normal" ID="{EA036C54-572C-4503-9C9E-9737C01F9D6B}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="SFX_Weapon_Player_Shoot_Special" ID="{D468595A-D296-41DD-9F71-074DA97BAA7E}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="SFX_Weapon_Player_Empty" ID="{F18AC17F-7CA0-41CA-8B96-902BDD3EF096}"/>
+													</GroupingBehavior>
+												</GroupingBehaviorList>
+												<GroupingList>
+													<Grouping>
+														<SwitchRef Name="SpecialShoot" ID="{4780A80E-FB24-48BE-96AE-B7F3AEA3014F}"/>
+														<ItemList>
+															<ItemRef Name="SFX_Weapon_Player_Shoot_Special" ID="{D468595A-D296-41DD-9F71-074DA97BAA7E}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="NormalShoot" ID="{F517C692-1255-4E42-B9D7-68D8143740D3}"/>
+														<ItemList>
+															<ItemRef Name="SFX_Weapon_Player_Shoot_Normal" ID="{EA036C54-572C-4503-9C9E-9737C01F9D6B}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Empty" ID="{1AEE23B6-CDA4-4B90-A7CF-68B71FE0F62A}"/>
+														<ItemList>
+															<ItemRef Name="SFX_Weapon_Player_Empty" ID="{F18AC17F-7CA0-41CA-8B96-902BDD3EF096}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Suction" ID="{6F3546CB-C72C-49FA-82CC-37C0C7ADB69D}"/>
+														<ItemList>
+															<ItemRef Name="SFX_Weapon_Player_Suction" ID="{93287432-55F3-4633-8BCA-C7CEE0A77C6D}"/>
+														</ItemList>
+													</Grouping>
+												</GroupingList>
+											</GroupingInfo>
+										</SwitchContainer>
+										<SwitchContainer Name="SFX_Weapon_Enemies" ID="{4A15FC38-D597-433A-955C-A5AE243BEA12}" ShortID="953476894">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
 												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
-												</Reference>
-											</ReferenceList>
-											<ObjectLists/>
-										</ActorMixer>
-										<ActorMixer Name="SFX_Player_Weapon_Suction" ID="{3D8B553D-238B-41F1-8F19-3FCA533B729D}" ShortID="955169219">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
+												<Reference Name="DefaultSwitchOrState">
+													<ObjectRef Name="NormalShoot" ID="{F517C692-1255-4E42-B9D7-68D8143740D3}" WorkUnitID="{CB01629D-BB33-4F08-81D4-0BFA90A28AAB}"/>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="Weapon" ID="{B1E96C49-DBF1-4FC2-9A08-5B4C37454BB8}" WorkUnitID="{CB01629D-BB33-4F08-81D4-0BFA90A28AAB}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<ActorMixer Name="SFX_Player_Weapon_Suction_Complete" ID="{1E7E330F-DEB8-40D4-BACB-D8C1CA539577}" ShortID="597518825">
+												<RandomSequenceContainer Name="SFX_Weapon_Enemies_Empty" ID="{5F64806B-F1B7-40DD-AFDF-2A70C7225EA2}" ShortID="568470276">
+													<PropertyList>
+														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{CECC6D7A-6235-433A-B0B0-22BA8E6E60B8}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="300"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
@@ -134,8 +349,23 @@
 														</Reference>
 													</ReferenceList>
 													<ObjectLists/>
-												</ActorMixer>
-												<ActorMixer Name="SFX_Player_Weapon_Suction_Failed" ID="{12A330D7-3162-4154-8DC9-21AEDDDA111F}" ShortID="152462877">
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="SFX_Weapon_Enemies_Shoot_Normal" ID="{08745115-3CDB-48A9-A702-EC0CE6B04240}" ShortID="1000896629">
+													<PropertyList>
+														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{1584E48C-68DF-4B07-B534-BEB6FD4B307A}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="300"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
@@ -145,8 +375,23 @@
 														</Reference>
 													</ReferenceList>
 													<ObjectLists/>
-												</ActorMixer>
-												<ActorMixer Name="SFX_Player_Weapon_Suction_Loop" ID="{FE396C5C-81A8-47F4-9E62-F141309C7290}" ShortID="481114395">
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="SFX_Weapon_Enemies_Shoot_Special" ID="{D741569B-91F5-4CAF-82D8-797E95CA1711}" ShortID="1029643982">
+													<PropertyList>
+														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{0EBBA4F7-4A63-469B-8093-85E0CB3DA9F0}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="300"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
@@ -156,28 +401,213 @@
 														</Reference>
 													</ReferenceList>
 													<ObjectLists/>
-												</ActorMixer>
+												</RandomSequenceContainer>
+												<SwitchContainer Name="SFX_Weapon_Enemies_Suction" ID="{5CECC7DB-6C16-4773-A89E-92B9EE42BC42}" ShortID="393554844">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
+														</Reference>
+														<Reference Name="DefaultSwitchOrState">
+															<ObjectRef Name="Loop" ID="{7E094AC4-1935-4F91-BBA4-9E98D38563CB}" WorkUnitID="{CB01629D-BB33-4F08-81D4-0BFA90A28AAB}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
+														</Reference>
+														<Reference Name="SwitchGroupOrStateGroup">
+															<ObjectRef Name="Suction" ID="{013FD523-D231-4CF9-8A81-AFF2A4E2F809}" WorkUnitID="{CB01629D-BB33-4F08-81D4-0BFA90A28AAB}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<RandomSequenceContainer Name="SFX_Weapon_Enemies_Suction_Failed" ID="{659AFFFE-D492-43CF-96FC-62A0671FFC1F}" ShortID="647637665">
+															<PropertyList>
+																<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+																<Property Name="Pitch" Type="int32">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{BF54086B-8CC5-4069-A73A-DAA65E2FE2F2}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Max" Type="Real64" Value="300"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
+																</Reference>
+															</ReferenceList>
+															<ObjectLists/>
+														</RandomSequenceContainer>
+														<RandomSequenceContainer Name="SFX_Weapon_Enemies_Suction_Loop" ID="{EAC3A59B-2BD3-4471-B46A-FF87AA4A6149}" ShortID="1065906815">
+															<PropertyList>
+																<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+																<Property Name="Pitch" Type="int32">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{EF74C74F-C81C-4E89-808A-C40809805267}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Max" Type="Real64" Value="300"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
+																</Reference>
+															</ReferenceList>
+															<ObjectLists/>
+														</RandomSequenceContainer>
+														<RandomSequenceContainer Name="SFX_Weapon_Enemies_Suction_Complete" ID="{7E187225-7D27-4FC5-9E6C-0C80689AEE40}" ShortID="1003446210">
+															<PropertyList>
+																<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+																<Property Name="Pitch" Type="int32">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{EE8C24D6-A433-43FD-ABCD-48604E070A7D}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Max" Type="Real64" Value="300"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
+																</Reference>
+															</ReferenceList>
+															<ObjectLists/>
+														</RandomSequenceContainer>
+													</ChildrenList>
+													<ObjectLists/>
+													<GroupingInfo>
+														<GroupingBehaviorList>
+															<GroupingBehavior>
+																<ItemRef Name="SFX_Weapon_Enemies_Suction_Complete" ID="{7E187225-7D27-4FC5-9E6C-0C80689AEE40}"/>
+															</GroupingBehavior>
+															<GroupingBehavior>
+																<ItemRef Name="SFX_Weapon_Enemies_Suction_Loop" ID="{EAC3A59B-2BD3-4471-B46A-FF87AA4A6149}"/>
+															</GroupingBehavior>
+															<GroupingBehavior>
+																<ItemRef Name="SFX_Weapon_Enemies_Suction_Failed" ID="{659AFFFE-D492-43CF-96FC-62A0671FFC1F}"/>
+															</GroupingBehavior>
+														</GroupingBehaviorList>
+														<GroupingList>
+															<Grouping>
+																<SwitchRef Name="Complete" ID="{C4CBF348-19F0-461A-A4EA-AA995732915E}"/>
+																<ItemList>
+																	<ItemRef Name="SFX_Weapon_Enemies_Suction_Complete" ID="{7E187225-7D27-4FC5-9E6C-0C80689AEE40}"/>
+																</ItemList>
+															</Grouping>
+															<Grouping>
+																<SwitchRef Name="Loop" ID="{7E094AC4-1935-4F91-BBA4-9E98D38563CB}"/>
+																<ItemList>
+																	<ItemRef Name="SFX_Weapon_Enemies_Suction_Loop" ID="{EAC3A59B-2BD3-4471-B46A-FF87AA4A6149}"/>
+																</ItemList>
+															</Grouping>
+															<Grouping>
+																<SwitchRef Name="Failed" ID="{AA840BEC-FA83-4B10-B621-9B7B23DAD145}"/>
+																<ItemList>
+																	<ItemRef Name="SFX_Weapon_Enemies_Suction_Failed" ID="{659AFFFE-D492-43CF-96FC-62A0671FFC1F}"/>
+																</ItemList>
+															</Grouping>
+														</GroupingList>
+													</GroupingInfo>
+												</SwitchContainer>
 											</ChildrenList>
 											<ObjectLists/>
-										</ActorMixer>
-										<ActorMixer Name="SFX_Player_Weapon_TimeStop" ID="{25E22912-31B1-4244-AFAA-91E8ABF44787}" ShortID="865752744">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
-												</Reference>
-											</ReferenceList>
-											<ObjectLists/>
-										</ActorMixer>
+											<GroupingInfo>
+												<GroupingBehaviorList>
+													<GroupingBehavior>
+														<ItemRef Name="SFX_Weapon_Enemies_Shoot_Normal" ID="{08745115-3CDB-48A9-A702-EC0CE6B04240}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="SFX_Weapon_Enemies_Empty" ID="{5F64806B-F1B7-40DD-AFDF-2A70C7225EA2}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="SFX_Weapon_Enemies_Shoot_Special" ID="{D741569B-91F5-4CAF-82D8-797E95CA1711}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="SFX_Weapon_Enemies_Suction" ID="{5CECC7DB-6C16-4773-A89E-92B9EE42BC42}"/>
+													</GroupingBehavior>
+												</GroupingBehaviorList>
+												<GroupingList>
+													<Grouping>
+														<SwitchRef Name="SpecialShoot" ID="{4780A80E-FB24-48BE-96AE-B7F3AEA3014F}"/>
+														<ItemList>
+															<ItemRef Name="SFX_Weapon_Enemies_Shoot_Special" ID="{D741569B-91F5-4CAF-82D8-797E95CA1711}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="NormalShoot" ID="{F517C692-1255-4E42-B9D7-68D8143740D3}"/>
+														<ItemList>
+															<ItemRef Name="SFX_Weapon_Enemies_Shoot_Normal" ID="{08745115-3CDB-48A9-A702-EC0CE6B04240}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Empty" ID="{1AEE23B6-CDA4-4B90-A7CF-68B71FE0F62A}"/>
+														<ItemList>
+															<ItemRef Name="SFX_Weapon_Enemies_Empty" ID="{5F64806B-F1B7-40DD-AFDF-2A70C7225EA2}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Suction" ID="{6F3546CB-C72C-49FA-82CC-37C0C7ADB69D}"/>
+														<ItemList>
+															<ItemRef Name="SFX_Weapon_Enemies_Suction" ID="{5CECC7DB-6C16-4773-A89E-92B9EE42BC42}"/>
+														</ItemList>
+													</Grouping>
+												</GroupingList>
+											</GroupingInfo>
+										</SwitchContainer>
 									</ChildrenList>
 									<ObjectLists/>
-								</ActorMixer>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="SFX_Weapon_Enemies" ID="{4A15FC38-D597-433A-955C-A5AE243BEA12}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="SFX_Weapon_Player" ID="{288C8AE0-3249-4F07-804A-6294AB9C100C}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="Player" ID="{103A0212-EF68-4219-A4B7-3C1B4D1A510D}"/>
+												<ItemList>
+													<ItemRef Name="SFX_Weapon_Player" ID="{288C8AE0-3249-4F07-804A-6294AB9C100C}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Enemies" ID="{E8532D9A-89D4-4C1A-9C72-BC7258D2F73B}"/>
+												<ItemList>
+													<ItemRef Name="SFX_Weapon_Enemies" ID="{4A15FC38-D597-433A-955C-A5AE243BEA12}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
 							</ChildrenList>
 							<ObjectLists/>
 						</ActorMixer>
-						<ActorMixer Name="SFX_Enemies" ID="{9A318E62-891A-4557-A629-B21BA8337620}" ShortID="603294326">
+						<ActorMixer Name="SFX_Movement" ID="{9BC78D21-2484-4A82-B5CE-7664C35B99C2}" ShortID="825266641">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
@@ -187,27 +617,54 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<ActorMixer Name="SFX_Enemies_Weapon" ID="{0F35F6C6-322A-49FA-AD96-5335E1D92C4A}" ShortID="559058498">
+								<SwitchContainer Name="SFX_Movement" ID="{10BE9B7D-1C00-4AC0-B03F-99B28B9DEEDA}" ShortID="970678537">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
 										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="Player" ID="{103A0212-EF68-4219-A4B7-3C1B4D1A510D}" WorkUnitID="{CB01629D-BB33-4F08-81D4-0BFA90A28AAB}"/>
+										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
 										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Character" ID="{472ACB58-60A0-40B6-BAC4-4086E60C27D2}" WorkUnitID="{CB01629D-BB33-4F08-81D4-0BFA90A28AAB}"/>
+										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<ActorMixer Name="SFX_Enemies_Weapon_Shoot" ID="{A018EAF1-79B2-4FD0-8501-A8DE79EA9AB6}" ShortID="575271015">
+										<SwitchContainer Name="SFX_Movement_Enemies" ID="{4C949B2B-2F54-4071-A6B8-B76ED89A5051}" ShortID="763582593">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
 												</Reference>
+												<Reference Name="DefaultSwitchOrState">
+													<ObjectRef Name="Walk" ID="{D04D6272-674F-45B3-9326-A19591AE61B7}" WorkUnitID="{CB01629D-BB33-4F08-81D4-0BFA90A28AAB}"/>
+												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="Movement" ID="{EAC1706A-036D-404E-904A-123EED26E037}" WorkUnitID="{CB01629D-BB33-4F08-81D4-0BFA90A28AAB}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<ActorMixer Name="SFX_Enemies_Weapon_Shoot_Normal" ID="{E8496D30-B73F-4087-9214-91BD62D1EDCC}" ShortID="808082391">
+												<RandomSequenceContainer Name="SFX_Movement_Enemies_Dodge" ID="{1840E5BF-99C1-4ED9-AE2A-D0D9CEF05A95}" ShortID="517838244">
+													<PropertyList>
+														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{0090C3BA-2D79-4977-AAF3-95B9BD9C37C9}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="300"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
@@ -217,32 +674,466 @@
 														</Reference>
 													</ReferenceList>
 													<ObjectLists/>
-												</ActorMixer>
-												<ActorMixer Name="SFX_Enemies_Weapon_Shoot_Special" ID="{3531794E-0F90-4386-A162-282C7A15D1DB}" ShortID="334145380">
+												</RandomSequenceContainer>
+												<SwitchContainer Name="SFX_Movement_Enemies_Footsteps" ID="{DEC2DD6C-AFDC-4931-8CCC-A05CD4F03153}" ShortID="641521409">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
 														</Reference>
+														<Reference Name="DefaultSwitchOrState">
+															<ObjectRef Name="Metal" ID="{9995C882-0C8A-4CDB-A846-3B5CEF751E3D}" WorkUnitID="{CB01629D-BB33-4F08-81D4-0BFA90A28AAB}"/>
+														</Reference>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
 														</Reference>
+														<Reference Name="SwitchGroupOrStateGroup">
+															<ObjectRef Name="Surfaces" ID="{9F9F3B74-61E8-4D75-BB49-1D346812146C}" WorkUnitID="{CB01629D-BB33-4F08-81D4-0BFA90A28AAB}"/>
+														</Reference>
 													</ReferenceList>
+													<ChildrenList>
+														<RandomSequenceContainer Name="SFX_Movement_Enemies_Footsteps_Dirt" ID="{65BA8FC2-1693-46E5-A42C-0226169ED6F9}" ShortID="909230649">
+															<PropertyList>
+																<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+																<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
+																</Reference>
+															</ReferenceList>
+															<ObjectLists/>
+														</RandomSequenceContainer>
+														<RandomSequenceContainer Name="SFX_Movement_Enemies_Footsteps_Metal" ID="{0300BF51-848A-4892-AD65-3F2B94F4B89F}" ShortID="325045845">
+															<PropertyList>
+																<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+																<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<RandomSequenceContainer Name="SFX_Movement_Enemies_Footsteps_Metal_Main" ID="{871D509F-AEFD-4F47-87FC-AFFFE1E08745}" ShortID="680320431">
+																	<PropertyList>
+																		<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+																		<Property Name="Pitch" Type="int32">
+																			<ModifierList>
+																				<ModifierInfo>
+																					<Modifier Name="" ID="{1D6C0984-87DA-4874-9113-FB34692273C3}">
+																						<PropertyList>
+																							<Property Name="Enabled" Type="bool" Value="True"/>
+																							<Property Name="Max" Type="Real64" Value="300"/>
+																						</PropertyList>
+																					</Modifier>
+																				</ModifierInfo>
+																			</ModifierList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<Sound Name="SFX_Movement_Enemies_Footsteps_Metal_10" ID="{7DD7D3EA-47AB-4BFD-9E17-AAA52F8F111C}" ShortID="1065116787">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="SFX_Movement_Enemies_Walk_Metal_10" ID="{D7172AC2-FA8C-4D8E-BB20-EF5B855CBD60}">
+																					<Language>SFX</Language>
+																					<AudioFile>SFX_Footsteps\SFX_Footsteps_Enemies\SFX_Movement_Enemies_Walk_Metal_10.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="493534952"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ObjectLists/>
+																			<ActiveSourceList>
+																				<ActiveSource Name="SFX_Movement_Enemies_Walk_Metal_10" ID="{D7172AC2-FA8C-4D8E-BB20-EF5B855CBD60}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="SFX_Movement_Enemies_Footsteps_Metal_09" ID="{B26AC585-7BFD-4245-9833-1D1CF8090862}" ShortID="29224271">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="SFX_Movement_Enemies_Walk_Metal_09" ID="{2AB4FC59-AB78-4528-8BF9-FCA704884E32}">
+																					<Language>SFX</Language>
+																					<AudioFile>SFX_Footsteps\SFX_Footsteps_Enemies\SFX_Movement_Enemies_Walk_Metal_09.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="111680307"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ObjectLists/>
+																			<ActiveSourceList>
+																				<ActiveSource Name="SFX_Movement_Enemies_Walk_Metal_09" ID="{2AB4FC59-AB78-4528-8BF9-FCA704884E32}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="SFX_Movement_Enemies_Footsteps_Metal_08" ID="{95FF723C-96C0-4FB0-AAB0-0E206C8DAB57}" ShortID="293810131">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="SFX_Movement_Enemies_Walk_Metal_08" ID="{5C0F4E5D-FC43-49CF-B721-FA1F4459C791}">
+																					<Language>SFX</Language>
+																					<AudioFile>SFX_Footsteps\SFX_Footsteps_Enemies\SFX_Movement_Enemies_Walk_Metal_08.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="716952085"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ObjectLists/>
+																			<ActiveSourceList>
+																				<ActiveSource Name="SFX_Movement_Enemies_Walk_Metal_08" ID="{5C0F4E5D-FC43-49CF-B721-FA1F4459C791}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="SFX_Movement_Enemies_Footsteps_Metal_07" ID="{EEBD39A6-EC1C-4534-A623-B54307682A99}" ShortID="702465356">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="SFX_Movement_Enemies_Walk_Metal_07" ID="{EA13B0E1-407E-4ECE-84FB-FD710C52DDA9}">
+																					<Language>SFX</Language>
+																					<AudioFile>SFX_Footsteps\SFX_Footsteps_Enemies\SFX_Movement_Enemies_Walk_Metal_07.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="491012235"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ObjectLists/>
+																			<ActiveSourceList>
+																				<ActiveSource Name="SFX_Movement_Enemies_Walk_Metal_07" ID="{EA13B0E1-407E-4ECE-84FB-FD710C52DDA9}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="SFX_Movement_Enemies_Footsteps_Metal_06" ID="{45909231-50AB-4F10-841B-2077D0D001AE}" ShortID="272459772">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="SFX_Movement_Enemies_Walk_Metal_06" ID="{1313F92A-BF22-42A6-B232-5984A876940E}">
+																					<Language>SFX</Language>
+																					<AudioFile>SFX_Footsteps\SFX_Footsteps_Enemies\SFX_Movement_Enemies_Walk_Metal_06.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="637720635"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ObjectLists/>
+																			<ActiveSourceList>
+																				<ActiveSource Name="SFX_Movement_Enemies_Walk_Metal_06" ID="{1313F92A-BF22-42A6-B232-5984A876940E}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="SFX_Movement_Enemies_Footsteps_Metal_05" ID="{2E4FB6DF-AAC2-4BCF-83F0-C61D1F2AD29E}" ShortID="573201930">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="SFX_Movement_Enemies_Walk_Metal_05" ID="{E32E5046-8FBB-427D-BB8E-37F84FD5F387}">
+																					<Language>SFX</Language>
+																					<AudioFile>SFX_Footsteps\SFX_Footsteps_Enemies\SFX_Movement_Enemies_Walk_Metal_05.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="1018691115"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ObjectLists/>
+																			<ActiveSourceList>
+																				<ActiveSource Name="SFX_Movement_Enemies_Walk_Metal_05" ID="{E32E5046-8FBB-427D-BB8E-37F84FD5F387}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="SFX_Movement_Enemies_Footsteps_Metal_04" ID="{7EBB9C75-265B-4510-92B3-CD04CED15079}" ShortID="399460986">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="SFX_Movement_Enemies_Walk_Metal_04" ID="{59ECB7C6-A6F1-4C7F-A4C4-CB06D4814CA3}">
+																					<Language>SFX</Language>
+																					<AudioFile>SFX_Footsteps\SFX_Footsteps_Enemies\SFX_Movement_Enemies_Walk_Metal_04.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="141259207"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ObjectLists/>
+																			<ActiveSourceList>
+																				<ActiveSource Name="SFX_Movement_Enemies_Walk_Metal_04" ID="{59ECB7C6-A6F1-4C7F-A4C4-CB06D4814CA3}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="SFX_Movement_Enemies_Footsteps_Metal_03" ID="{153FC5F8-0F7F-4E88-A53C-D56C5B0F514D}" ShortID="285207072">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="SFX_Movement_Enemies_Walk_Metal_03" ID="{D1A7D7D2-FCC5-45AB-A785-4652B41CCE1E}">
+																					<Language>SFX</Language>
+																					<AudioFile>SFX_Footsteps\SFX_Footsteps_Enemies\SFX_Movement_Enemies_Walk_Metal_03.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="96892871"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ObjectLists/>
+																			<ActiveSourceList>
+																				<ActiveSource Name="SFX_Movement_Enemies_Walk_Metal_03" ID="{D1A7D7D2-FCC5-45AB-A785-4652B41CCE1E}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="SFX_Movement_Enemies_Footsteps_Metal_02" ID="{DE1762A8-D995-427A-B94D-4F69BC8E8017}" ShortID="950995210">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="SFX_Movement_Enemies_Walk_Metal_02" ID="{38DB2BE7-178C-4967-8FD4-50DA1D43EF2F}">
+																					<Language>SFX</Language>
+																					<AudioFile>SFX_Footsteps\SFX_Footsteps_Enemies\SFX_Movement_Enemies_Walk_Metal_02.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="220221295"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ObjectLists/>
+																			<ActiveSourceList>
+																				<ActiveSource Name="SFX_Movement_Enemies_Walk_Metal_02" ID="{38DB2BE7-178C-4967-8FD4-50DA1D43EF2F}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="SFX_Movement_Enemies_Footsteps_Metal_01" ID="{D7445482-443B-4CB8-A830-4DAF398CCA48}" ShortID="871940496">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="SFX_Movement_Enemies_Walk_Metal_01" ID="{4F1E0455-3F5C-4951-8701-3CD8C4B22F67}">
+																					<Language>SFX</Language>
+																					<AudioFile>SFX_Footsteps\SFX_Footsteps_Enemies\SFX_Movement_Enemies_Walk_Metal_01.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="53378789"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ObjectLists/>
+																			<ActiveSourceList>
+																				<ActiveSource Name="SFX_Movement_Enemies_Walk_Metal_01" ID="{4F1E0455-3F5C-4951-8701-3CD8C4B22F67}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																	</ChildrenList>
+																	<ObjectLists/>
+																</RandomSequenceContainer>
+																<RandomSequenceContainer Name="SFX_Movement_Enemies_Footsteps_Metal_Gack" ID="{40B8F8D1-4BEC-4BEC-B04D-99EFC91440BF}" ShortID="890574083">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ObjectLists/>
+																</RandomSequenceContainer>
+															</ChildrenList>
+															<ObjectLists/>
+															<Playlist>
+																<ItemRef Name="SFX_Movement_Enemies_Footsteps_Metal_Main" ID="{871D509F-AEFD-4F47-87FC-AFFFE1E08745}"/>
+																<ItemRef Name="SFX_Movement_Enemies_Footsteps_Metal_Gack" ID="{40B8F8D1-4BEC-4BEC-B04D-99EFC91440BF}"/>
+															</Playlist>
+														</RandomSequenceContainer>
+														<RandomSequenceContainer Name="SFX_Movement_Enemies_Footsteps_Wood" ID="{4AB1DFAE-E9F7-4C6F-AAFC-43E6316E72F5}" ShortID="956246232">
+															<PropertyList>
+																<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+																<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
+																</Reference>
+															</ReferenceList>
+															<ObjectLists/>
+														</RandomSequenceContainer>
+														<RandomSequenceContainer Name="SFX_Movement_Enemies_Footsteps_Stone" ID="{38E816C8-3CCF-4847-9E91-DF63CE41F146}" ShortID="543614516">
+															<PropertyList>
+																<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+																<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
+																</Reference>
+															</ReferenceList>
+															<ObjectLists/>
+														</RandomSequenceContainer>
+													</ChildrenList>
 													<ObjectLists/>
-												</ActorMixer>
+													<GroupingInfo>
+														<GroupingBehaviorList>
+															<GroupingBehavior>
+																<ItemRef Name="SFX_Movement_Enemies_Footsteps_Metal" ID="{0300BF51-848A-4892-AD65-3F2B94F4B89F}"/>
+															</GroupingBehavior>
+															<GroupingBehavior>
+																<ItemRef Name="SFX_Movement_Enemies_Footsteps_Wood" ID="{4AB1DFAE-E9F7-4C6F-AAFC-43E6316E72F5}"/>
+															</GroupingBehavior>
+															<GroupingBehavior>
+																<ItemRef Name="SFX_Movement_Enemies_Footsteps_Dirt" ID="{65BA8FC2-1693-46E5-A42C-0226169ED6F9}"/>
+															</GroupingBehavior>
+															<GroupingBehavior>
+																<ItemRef Name="SFX_Movement_Enemies_Footsteps_Stone" ID="{38E816C8-3CCF-4847-9E91-DF63CE41F146}"/>
+															</GroupingBehavior>
+														</GroupingBehaviorList>
+														<GroupingList>
+															<Grouping>
+																<SwitchRef Name="Dirt" ID="{84450B47-B8A0-4392-AF8F-1E4B42B38D42}"/>
+																<ItemList>
+																	<ItemRef Name="SFX_Movement_Enemies_Footsteps_Dirt" ID="{65BA8FC2-1693-46E5-A42C-0226169ED6F9}"/>
+																</ItemList>
+															</Grouping>
+															<Grouping>
+																<SwitchRef Name="Metal" ID="{9995C882-0C8A-4CDB-A846-3B5CEF751E3D}"/>
+																<ItemList>
+																	<ItemRef Name="SFX_Movement_Enemies_Footsteps_Metal" ID="{0300BF51-848A-4892-AD65-3F2B94F4B89F}"/>
+																</ItemList>
+															</Grouping>
+															<Grouping>
+																<SwitchRef Name="Stone" ID="{B78C1FBF-A017-4573-BEBA-4294B258CC0A}"/>
+																<ItemList>
+																	<ItemRef Name="SFX_Movement_Enemies_Footsteps_Stone" ID="{38E816C8-3CCF-4847-9E91-DF63CE41F146}"/>
+																</ItemList>
+															</Grouping>
+															<Grouping>
+																<SwitchRef Name="Wood" ID="{640794D2-A266-43AD-A786-27627D953CCC}"/>
+																<ItemList>
+																	<ItemRef Name="SFX_Movement_Enemies_Footsteps_Wood" ID="{4AB1DFAE-E9F7-4C6F-AAFC-43E6316E72F5}"/>
+																</ItemList>
+															</Grouping>
+														</GroupingList>
+													</GroupingInfo>
+												</SwitchContainer>
 											</ChildrenList>
 											<ObjectLists/>
-										</ActorMixer>
-										<ActorMixer Name="SFX_Enemies_Weapon_Suction" ID="{33DEF623-22A3-466C-A2FB-4AE1EB203E0B}" ShortID="678159341">
+											<GroupingInfo>
+												<GroupingBehaviorList>
+													<GroupingBehavior>
+														<ItemRef Name="SFX_Movement_Enemies_Footsteps" ID="{DEC2DD6C-AFDC-4931-8CCC-A05CD4F03153}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="SFX_Movement_Enemies_Dodge" ID="{1840E5BF-99C1-4ED9-AE2A-D0D9CEF05A95}"/>
+													</GroupingBehavior>
+												</GroupingBehaviorList>
+												<GroupingList>
+													<Grouping>
+														<SwitchRef Name="Walk" ID="{D04D6272-674F-45B3-9326-A19591AE61B7}"/>
+														<ItemList>
+															<ItemRef Name="SFX_Movement_Enemies_Footsteps" ID="{DEC2DD6C-AFDC-4931-8CCC-A05CD4F03153}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Dodge" ID="{E9A5E1E4-7C88-4625-8B2C-E0B2DBF8E400}"/>
+														<ItemList>
+															<ItemRef Name="SFX_Movement_Enemies_Dodge" ID="{1840E5BF-99C1-4ED9-AE2A-D0D9CEF05A95}"/>
+														</ItemList>
+													</Grouping>
+												</GroupingList>
+											</GroupingInfo>
+										</SwitchContainer>
+										<SwitchContainer Name="SFX_Movement_Player" ID="{9819087F-F27E-4312-B69C-8203BAE7A380}" ShortID="830773240">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
 												</Reference>
+												<Reference Name="DefaultSwitchOrState">
+													<ObjectRef Name="Walk" ID="{D04D6272-674F-45B3-9326-A19591AE61B7}" WorkUnitID="{CB01629D-BB33-4F08-81D4-0BFA90A28AAB}"/>
+												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="Movement" ID="{EAC1706A-036D-404E-904A-123EED26E037}" WorkUnitID="{CB01629D-BB33-4F08-81D4-0BFA90A28AAB}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<ActorMixer Name="SFX_Enemies_Weapon_Suction_Complete" ID="{C6067039-6BC0-4F7A-80E9-F701682B7915}" ShortID="123009157">
+												<RandomSequenceContainer Name="SFX_Movement_Player_Dodge" ID="{01C989C5-34A3-4AEA-8D45-B2EAC1B65337}" ShortID="208137568">
+													<PropertyList>
+														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{3ED2B792-ED96-438B-B12A-7203A3C89F03}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="300"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
@@ -252,61 +1143,465 @@
 														</Reference>
 													</ReferenceList>
 													<ObjectLists/>
-												</ActorMixer>
-												<ActorMixer Name="SFX_Enemies_Weapon_Suction_Failed" ID="{C132F65C-EBB2-4F3F-B00A-6AE65AED5EF3}" ShortID="310254451">
+												</RandomSequenceContainer>
+												<SwitchContainer Name="SFX_Movement_Player_Walk" ID="{A5311590-49B9-4376-B5D5-29873E976079}" ShortID="625115034">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
 														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
-														</Reference>
-													</ReferenceList>
-													<ObjectLists/>
-												</ActorMixer>
-												<ActorMixer Name="SFX_Enemies_Weapon_Suction_Loop" ID="{686E5CB1-96FB-4980-B05A-E324107D68E8}" ShortID="694480186">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
+														<Reference Name="DefaultSwitchOrState">
+															<ObjectRef Name="Metal" ID="{9995C882-0C8A-4CDB-A846-3B5CEF751E3D}" WorkUnitID="{CB01629D-BB33-4F08-81D4-0BFA90A28AAB}"/>
 														</Reference>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
 														</Reference>
+														<Reference Name="SwitchGroupOrStateGroup">
+															<ObjectRef Name="Surfaces" ID="{9F9F3B74-61E8-4D75-BB49-1D346812146C}" WorkUnitID="{CB01629D-BB33-4F08-81D4-0BFA90A28AAB}"/>
+														</Reference>
 													</ReferenceList>
+													<ChildrenList>
+														<RandomSequenceContainer Name="SFX_Movement_Player_Footsteps_Dirt" ID="{93D16E29-A737-429C-B38C-7767B24BDC15}" ShortID="106201004">
+															<PropertyList>
+																<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+																<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
+																</Reference>
+															</ReferenceList>
+															<ObjectLists/>
+														</RandomSequenceContainer>
+														<RandomSequenceContainer Name="SFX_Movement_Player_Footsteps_Metal" ID="{BFC658ED-54A5-4856-8E31-CF93DCAB1E79}" ShortID="601509721">
+															<PropertyList>
+																<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+																<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<RandomSequenceContainer Name="SFX_Movement_Player_Footsteps_Metal_Main" ID="{F6376CD9-845B-4623-86BB-2CF214F7FE8F}" ShortID="196797944">
+																	<PropertyList>
+																		<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+																		<Property Name="Pitch" Type="int32">
+																			<ModifierList>
+																				<ModifierInfo>
+																					<Modifier Name="" ID="{691F9AAD-55C6-4805-82AA-2BBA8A29D687}">
+																						<PropertyList>
+																							<Property Name="Enabled" Type="bool" Value="True"/>
+																							<Property Name="Max" Type="Real64" Value="300"/>
+																						</PropertyList>
+																					</Modifier>
+																				</ModifierInfo>
+																			</ModifierList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<Sound Name="SFX_Movement_Player_Footsteps_Metal_01" ID="{8D3CFF21-705D-4869-8555-E1FB658C13EA}" ShortID="780415978">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="SFX_Movement_Player_Walk_Metal_01" ID="{181FEF72-878C-4BAD-B436-B924B80E70C6}">
+																					<Language>SFX</Language>
+																					<AudioFile>SFX_Footsteps\SFX_Footsteps_Player\SFX_Movement_Player_Walk_Metal_01.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="353051995"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ObjectLists/>
+																			<ActiveSourceList>
+																				<ActiveSource Name="SFX_Movement_Player_Walk_Metal_01" ID="{181FEF72-878C-4BAD-B436-B924B80E70C6}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="SFX_Movement_Player_Footsteps_Metal_10" ID="{ABB5B047-1FDC-4663-B76C-A2D8AF22CE94}" ShortID="425009289">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="SFX_Movement_Player_Walk_Metal_10" ID="{E2F542C2-4F45-4D9E-BC82-E39B58E32703}">
+																					<Language>SFX</Language>
+																					<AudioFile>SFX_Footsteps\SFX_Footsteps_Player\SFX_Movement_Player_Walk_Metal_10.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="1067209122"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ObjectLists/>
+																			<ActiveSourceList>
+																				<ActiveSource Name="SFX_Movement_Player_Walk_Metal_10" ID="{E2F542C2-4F45-4D9E-BC82-E39B58E32703}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="SFX_Movement_Player_Footsteps_Metal_09" ID="{0C812AF7-15B5-464D-8CD1-9D512C2C58EB}" ShortID="649613215">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="SFX_Movement_Player_Walk_Metal_09" ID="{2CAB89E2-3C07-4E7C-9E99-C2C426F85FD8}">
+																					<Language>SFX</Language>
+																					<AudioFile>SFX_Footsteps\SFX_Footsteps_Player\SFX_Movement_Player_Walk_Metal_09.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="82735208"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ObjectLists/>
+																			<ActiveSourceList>
+																				<ActiveSource Name="SFX_Movement_Player_Walk_Metal_09" ID="{2CAB89E2-3C07-4E7C-9E99-C2C426F85FD8}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="SFX_Movement_Player_Footsteps_Metal_08" ID="{38D6B924-A170-4BC2-B051-9ACAAD9E24E5}" ShortID="403013256">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="SFX_Movement_Player_Walk_Metal_08" ID="{00A1FDE9-568C-4319-89E0-384E912F6496}">
+																					<Language>SFX</Language>
+																					<AudioFile>SFX_Footsteps\SFX_Footsteps_Player\SFX_Movement_Player_Walk_Metal_08.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="567206997"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ObjectLists/>
+																			<ActiveSourceList>
+																				<ActiveSource Name="SFX_Movement_Player_Walk_Metal_08" ID="{00A1FDE9-568C-4319-89E0-384E912F6496}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="SFX_Movement_Player_Footsteps_Metal_07" ID="{0B37E81B-DCC6-4CFD-86AB-7F6FAD6C91BC}" ShortID="418312352">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="SFX_Movement_Player_Walk_Metal_07" ID="{806BCEE5-3BCF-4222-A382-E96EA3D04C26}">
+																					<Language>SFX</Language>
+																					<AudioFile>SFX_Footsteps\SFX_Footsteps_Player\SFX_Movement_Player_Walk_Metal_07.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="386688991"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ObjectLists/>
+																			<ActiveSourceList>
+																				<ActiveSource Name="SFX_Movement_Player_Walk_Metal_07" ID="{806BCEE5-3BCF-4222-A382-E96EA3D04C26}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="SFX_Movement_Player_Footsteps_Metal_06" ID="{01F438C4-6FF3-4CCD-99A9-141DB90EFFAF}" ShortID="662784172">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="SFX_Movement_Player_Walk_Metal_06" ID="{96FF4158-2E9B-447C-AC13-D74BC306C981}">
+																					<Language>SFX</Language>
+																					<AudioFile>SFX_Footsteps\SFX_Footsteps_Player\SFX_Movement_Player_Walk_Metal_06.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="163331611"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ObjectLists/>
+																			<ActiveSourceList>
+																				<ActiveSource Name="SFX_Movement_Player_Walk_Metal_06" ID="{96FF4158-2E9B-447C-AC13-D74BC306C981}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="SFX_Movement_Player_Footsteps_Metal_05" ID="{6FBF6CFA-CBC3-48F7-B19F-CA275FC2E49C}" ShortID="758653740">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="SFX_Movement_Player_Walk_Metal_05" ID="{DD18964D-71B5-4BB3-A1F3-FA9AA4F3467F}">
+																					<Language>SFX</Language>
+																					<AudioFile>SFX_Footsteps\SFX_Footsteps_Player\SFX_Movement_Player_Walk_Metal_05.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="232311037"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ObjectLists/>
+																			<ActiveSourceList>
+																				<ActiveSource Name="SFX_Movement_Player_Walk_Metal_05" ID="{DD18964D-71B5-4BB3-A1F3-FA9AA4F3467F}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="SFX_Movement_Player_Footsteps_Metal_04" ID="{7852F1A9-91A7-4310-B37E-9A94AA6E8DB9}" ShortID="452377979">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="SFX_Movement_Player_Walk_Metal_04" ID="{20499F44-9B49-46C8-AFB0-3070B61C8925}">
+																					<Language>SFX</Language>
+																					<AudioFile>SFX_Footsteps\SFX_Footsteps_Player\SFX_Movement_Player_Walk_Metal_04.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="707267067"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ObjectLists/>
+																			<ActiveSourceList>
+																				<ActiveSource Name="SFX_Movement_Player_Walk_Metal_04" ID="{20499F44-9B49-46C8-AFB0-3070B61C8925}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="SFX_Movement_Player_Footsteps_Metal_03" ID="{85AE7E06-34D4-4D1C-8099-69F42A2E8CE1}" ShortID="678157982">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="SFX_Movement_Player_Walk_Metal_03" ID="{A02F3B3B-488F-4E9F-98A1-9226E8D52417}">
+																					<Language>SFX</Language>
+																					<AudioFile>SFX_Footsteps\SFX_Footsteps_Player\SFX_Movement_Player_Walk_Metal_03.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="781648017"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ObjectLists/>
+																			<ActiveSourceList>
+																				<ActiveSource Name="SFX_Movement_Player_Walk_Metal_03" ID="{A02F3B3B-488F-4E9F-98A1-9226E8D52417}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="SFX_Movement_Player_Footsteps_Metal_02" ID="{1CC39D89-FC2C-4735-AFBF-F0D338334592}" ShortID="247899466">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="SFX_Movement_Player_Walk_Metal_02" ID="{63D50AE7-8C63-42DB-B88E-391E33032A20}">
+																					<Language>SFX</Language>
+																					<AudioFile>SFX_Footsteps\SFX_Footsteps_Player\SFX_Movement_Player_Walk_Metal_02.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="673866557"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ObjectLists/>
+																			<ActiveSourceList>
+																				<ActiveSource Name="SFX_Movement_Player_Walk_Metal_02" ID="{63D50AE7-8C63-42DB-B88E-391E33032A20}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																	</ChildrenList>
+																	<ObjectLists/>
+																</RandomSequenceContainer>
+																<RandomSequenceContainer Name="SFX_Movement_Player_Footsteps_Metal_Gack" ID="{776A55B8-D09D-4C4C-BF21-CA7B9B3867E6}" ShortID="903171572">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ObjectLists/>
+																</RandomSequenceContainer>
+															</ChildrenList>
+															<ObjectLists/>
+															<Playlist>
+																<ItemRef Name="SFX_Movement_Player_Footsteps_Metal_Main" ID="{F6376CD9-845B-4623-86BB-2CF214F7FE8F}"/>
+																<ItemRef Name="SFX_Movement_Player_Footsteps_Metal_Gack" ID="{776A55B8-D09D-4C4C-BF21-CA7B9B3867E6}"/>
+															</Playlist>
+														</RandomSequenceContainer>
+														<RandomSequenceContainer Name="SFX_Movement_Player_Footsteps_Wood" ID="{4DC1BDFA-B23B-4931-9F32-F14A32C620DF}" ShortID="105669864">
+															<PropertyList>
+																<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+																<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
+																</Reference>
+															</ReferenceList>
+															<ObjectLists/>
+														</RandomSequenceContainer>
+														<RandomSequenceContainer Name="SFX_Movement_Player_Footsteps_Stone" ID="{928B1834-91DA-476C-BBDC-BD84200579D4}" ShortID="826576200">
+															<PropertyList>
+																<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+																<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
+																</Reference>
+															</ReferenceList>
+															<ObjectLists/>
+														</RandomSequenceContainer>
+													</ChildrenList>
 													<ObjectLists/>
-												</ActorMixer>
+													<GroupingInfo>
+														<GroupingBehaviorList>
+															<GroupingBehavior>
+																<ItemRef Name="SFX_Movement_Player_Footsteps_Dirt" ID="{93D16E29-A737-429C-B38C-7767B24BDC15}"/>
+															</GroupingBehavior>
+															<GroupingBehavior>
+																<ItemRef Name="SFX_Movement_Player_Footsteps_Stone" ID="{928B1834-91DA-476C-BBDC-BD84200579D4}"/>
+															</GroupingBehavior>
+															<GroupingBehavior>
+																<ItemRef Name="SFX_Movement_Player_Footsteps_Metal" ID="{BFC658ED-54A5-4856-8E31-CF93DCAB1E79}"/>
+															</GroupingBehavior>
+															<GroupingBehavior>
+																<ItemRef Name="SFX_Movement_Player_Footsteps_Wood" ID="{4DC1BDFA-B23B-4931-9F32-F14A32C620DF}"/>
+															</GroupingBehavior>
+														</GroupingBehaviorList>
+														<GroupingList>
+															<Grouping>
+																<SwitchRef Name="Dirt" ID="{84450B47-B8A0-4392-AF8F-1E4B42B38D42}"/>
+																<ItemList>
+																	<ItemRef Name="SFX_Movement_Player_Footsteps_Dirt" ID="{93D16E29-A737-429C-B38C-7767B24BDC15}"/>
+																</ItemList>
+															</Grouping>
+															<Grouping>
+																<SwitchRef Name="Metal" ID="{9995C882-0C8A-4CDB-A846-3B5CEF751E3D}"/>
+																<ItemList>
+																	<ItemRef Name="SFX_Movement_Player_Footsteps_Metal" ID="{BFC658ED-54A5-4856-8E31-CF93DCAB1E79}"/>
+																</ItemList>
+															</Grouping>
+															<Grouping>
+																<SwitchRef Name="Stone" ID="{B78C1FBF-A017-4573-BEBA-4294B258CC0A}"/>
+																<ItemList>
+																	<ItemRef Name="SFX_Movement_Player_Footsteps_Stone" ID="{928B1834-91DA-476C-BBDC-BD84200579D4}"/>
+																</ItemList>
+															</Grouping>
+															<Grouping>
+																<SwitchRef Name="Wood" ID="{640794D2-A266-43AD-A786-27627D953CCC}"/>
+																<ItemList>
+																	<ItemRef Name="SFX_Movement_Player_Footsteps_Wood" ID="{4DC1BDFA-B23B-4931-9F32-F14A32C620DF}"/>
+																</ItemList>
+															</Grouping>
+														</GroupingList>
+													</GroupingInfo>
+												</SwitchContainer>
 											</ChildrenList>
 											<ObjectLists/>
-										</ActorMixer>
-										<ActorMixer Name="SFX_Enemies_Weapon_TimeAcceleration" ID="{939A212D-157A-468C-9BF8-D244FF94FB1E}" ShortID="415311391">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
-												</Reference>
-											</ReferenceList>
-											<ObjectLists/>
-										</ActorMixer>
+											<GroupingInfo>
+												<GroupingBehaviorList>
+													<GroupingBehavior>
+														<ItemRef Name="SFX_Movement_Player_Walk" ID="{A5311590-49B9-4376-B5D5-29873E976079}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="SFX_Movement_Player_Dodge" ID="{01C989C5-34A3-4AEA-8D45-B2EAC1B65337}"/>
+													</GroupingBehavior>
+												</GroupingBehaviorList>
+												<GroupingList>
+													<Grouping>
+														<SwitchRef Name="Walk" ID="{D04D6272-674F-45B3-9326-A19591AE61B7}"/>
+														<ItemList>
+															<ItemRef Name="SFX_Movement_Player_Walk" ID="{A5311590-49B9-4376-B5D5-29873E976079}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Dodge" ID="{E9A5E1E4-7C88-4625-8B2C-E0B2DBF8E400}"/>
+														<ItemList>
+															<ItemRef Name="SFX_Movement_Player_Dodge" ID="{01C989C5-34A3-4AEA-8D45-B2EAC1B65337}"/>
+														</ItemList>
+													</Grouping>
+												</GroupingList>
+											</GroupingInfo>
+										</SwitchContainer>
 									</ChildrenList>
 									<ObjectLists/>
-								</ActorMixer>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="SFX_Movement_Enemies" ID="{4C949B2B-2F54-4071-A6B8-B76ED89A5051}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="SFX_Movement_Player" ID="{9819087F-F27E-4312-B69C-8203BAE7A380}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="Player" ID="{103A0212-EF68-4219-A4B7-3C1B4D1A510D}"/>
+												<ItemList>
+													<ItemRef Name="SFX_Movement_Player" ID="{9819087F-F27E-4312-B69C-8203BAE7A380}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Enemies" ID="{E8532D9A-89D4-4C1A-9C72-BC7258D2F73B}"/>
+												<ItemList>
+													<ItemRef Name="SFX_Movement_Enemies" ID="{4C949B2B-2F54-4071-A6B8-B76ED89A5051}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
 							</ChildrenList>
 							<ObjectLists/>
 						</ActorMixer>
-						<ActorMixer Name="SFX_TimeTravel" ID="{062EBFC1-DF3F-4869-AB1D-6B330667B288}" ShortID="478141653">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
-								</Reference>
-							</ReferenceList>
-							<ObjectLists/>
-						</ActorMixer>
-						<ActorMixer Name="SFX_Movement" ID="{A163167E-37F9-4CF2-BA01-63E619D7C993}" ShortID="468480938">
+						<ActorMixer Name="SFX_Impacts" ID="{A1D63319-5C34-4746-9C03-B4EBF3E72C6C}" ShortID="614608555">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
@@ -316,63 +1611,38 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<ActorMixer Name="SFX_Movement_Enemies" ID="{C08733E9-0E85-44A4-8C51-9F0D8B4E1779}" ShortID="837851924">
+								<SwitchContainer Name="SFX_Impacts_Surfaces" ID="{47F24BA5-7770-4055-BFF7-3E4468CE790D}" ShortID="164152626">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
 										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="Metal" ID="{9995C882-0C8A-4CDB-A846-3B5CEF751E3D}" WorkUnitID="{CB01629D-BB33-4F08-81D4-0BFA90A28AAB}"/>
+										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
 										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Surfaces" ID="{9F9F3B74-61E8-4D75-BB49-1D346812146C}" WorkUnitID="{CB01629D-BB33-4F08-81D4-0BFA90A28AAB}"/>
+										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<ActorMixer Name="SFX_Movement_Enemies_Footsteps" ID="{BDB2CD50-6307-4E51-84C4-856EB8B72E51}" ShortID="271784439">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<ActorMixer Name="SFX_Movement_Enemies_Footsteps_Base" ID="{6E82F227-7175-426E-8D6D-0D0A8874ECE7}" ShortID="684855862">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
-														</Reference>
-													</ReferenceList>
-													<ObjectLists/>
-												</ActorMixer>
-												<ActorMixer Name="SFX_Movement_Enemies_Footsteps_Scuff" ID="{56D8D951-2A15-410A-85E8-95205B1B3F68}" ShortID="129506177">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
-														</Reference>
-													</ReferenceList>
-													<ObjectLists/>
-												</ActorMixer>
-												<ActorMixer Name="SFX_Movement_Enemies_Footsteps_Surface" ID="{99B188CA-C3E1-4649-B55B-077B2D98B6FB}" ShortID="1042602516">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
-														</Reference>
-													</ReferenceList>
-													<ObjectLists/>
-												</ActorMixer>
-											</ChildrenList>
-											<ObjectLists/>
-										</ActorMixer>
-										<ActorMixer Name="SFX_Movement_Enemies_Dodge" ID="{276F1767-B649-4E20-AF95-84B58F9315E4}" ShortID="738903287">
+										<RandomSequenceContainer Name="SFX_Impacts_Surfaces_Metal" ID="{414A052C-1157-46EA-B9E4-E0594344499B}" ShortID="670048582">
+											<PropertyList>
+												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{BF3AA5FC-C6AB-4D5A-9D0F-BE4A37B397D8}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="300"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
@@ -382,10 +1652,130 @@
 												</Reference>
 											</ReferenceList>
 											<ObjectLists/>
-										</ActorMixer>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="SFX_Impacts_Surfaces_Dirt" ID="{815DC0A0-3484-40A0-9C67-B537C5092A0E}" ShortID="780073464">
+											<PropertyList>
+												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{6E413216-CE6F-488F-8695-62D5BE36BF54}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="300"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="SFX_Impacts_Surfaces_Wood" ID="{7F933303-C974-4750-A507-57535E192C48}" ShortID="954888556">
+											<PropertyList>
+												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{350EDBA9-0C74-47F0-8693-ECCB3DB1D864}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="300"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="SFX_Impacts_Surfaces_Stone" ID="{0B4D1C54-71F4-407A-A9E6-9F6180A88833}" ShortID="905448007">
+											<PropertyList>
+												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{121E7EF4-5E1C-463B-84D7-47AB29921380}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="300"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists/>
+										</RandomSequenceContainer>
 									</ChildrenList>
 									<ObjectLists/>
-								</ActorMixer>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="SFX_Impacts_Surfaces_Wood" ID="{7F933303-C974-4750-A507-57535E192C48}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="SFX_Impacts_Surfaces_Metal" ID="{414A052C-1157-46EA-B9E4-E0594344499B}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="SFX_Impacts_Surfaces_Stone" ID="{0B4D1C54-71F4-407A-A9E6-9F6180A88833}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="SFX_Impacts_Surfaces_Dirt" ID="{815DC0A0-3484-40A0-9C67-B537C5092A0E}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="Dirt" ID="{84450B47-B8A0-4392-AF8F-1E4B42B38D42}"/>
+												<ItemList>
+													<ItemRef Name="SFX_Impacts_Surfaces_Dirt" ID="{815DC0A0-3484-40A0-9C67-B537C5092A0E}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Metal" ID="{9995C882-0C8A-4CDB-A846-3B5CEF751E3D}"/>
+												<ItemList>
+													<ItemRef Name="SFX_Impacts_Surfaces_Metal" ID="{414A052C-1157-46EA-B9E4-E0594344499B}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Stone" ID="{B78C1FBF-A017-4573-BEBA-4294B258CC0A}"/>
+												<ItemList>
+													<ItemRef Name="SFX_Impacts_Surfaces_Stone" ID="{0B4D1C54-71F4-407A-A9E6-9F6180A88833}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Wood" ID="{640794D2-A266-43AD-A786-27627D953CCC}"/>
+												<ItemList>
+													<ItemRef Name="SFX_Impacts_Surfaces_Wood" ID="{7F933303-C974-4750-A507-57535E192C48}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
 							</ChildrenList>
 							<ObjectLists/>
 						</ActorMixer>

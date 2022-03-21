@@ -1,3 +1,51 @@
 Event	ID	Name			Wwise Object Path	Notes
-	2187416818	Movement_Footsteps			\Default Work Unit\Movement_Footsteps	
+	2129636626	Movement			\Default Work Unit\SFX\Movement	
+	3257506471	Impact			\Default Work Unit\SFX\Impact	
+	3893417221	Weapon			\Default Work Unit\SFX\Weapon	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	143205294	Suction			\Default Work Unit\Suction	
+	436743010	Character			\Default Work Unit\Character	
+	2129636626	Movement			\Default Work Unit\Movement	
+	3714303081	Surfaces			\Default Work Unit\Surfaces	
+	3893417221	Weapon			\Default Work Unit\Weapon	
+
+Switch	ID	Name	Switch Group			Notes
+	691006007	Loop	Suction			
+	1655200910	Failed	Suction			
+	2631133988	Complete	Suction			
+	1069431850	Player	Character			
+	2242381963	Enemies	Character			
+	1799292946	Dodge	Movement			
+	2108779966	Walk	Movement			
+	1216965916	Stone	Surfaces			
+	2058049674	Wood	Surfaces			
+	2195636714	Dirt	Surfaces			
+	2473969246	Metal	Surfaces			
+	143205294	Suction	Weapon			
+	1740378383	SpecialShoot	Weapon			
+	3354297748	Empty	Weapon			
+	3752496941	NormalShoot	Weapon			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	53378789	SFX_Movement_Enemies_Footsteps_Metal_01	Y:\TimeThief\TimeThief\.cache\Windows\SFX\SFX_Footsteps\SFX_Footsteps_Enemies\SFX_Movement_Enemies_Walk_Metal_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_Movement\SFX_Movement\SFX_Movement_Enemies\SFX_Movement_Enemies_Footsteps\SFX_Movement_Enemies_Footsteps_Metal\SFX_Movement_Enemies_Footsteps_Metal_Main\SFX_Movement_Enemies_Footsteps_Metal_01		36100
+	82735208	SFX_Movement_Player_Footsteps_Metal_09	Y:\TimeThief\TimeThief\.cache\Windows\SFX\SFX_Footsteps\SFX_Footsteps_Player\SFX_Movement_Player_Walk_Metal_09_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_Movement\SFX_Movement\SFX_Movement_Player\SFX_Movement_Player_Walk\SFX_Movement_Player_Footsteps_Metal\SFX_Movement_Player_Footsteps_Metal_Main\SFX_Movement_Player_Footsteps_Metal_09		36100
+	96892871	SFX_Movement_Enemies_Footsteps_Metal_03	Y:\TimeThief\TimeThief\.cache\Windows\SFX\SFX_Footsteps\SFX_Footsteps_Enemies\SFX_Movement_Enemies_Walk_Metal_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_Movement\SFX_Movement\SFX_Movement_Enemies\SFX_Movement_Enemies_Footsteps\SFX_Movement_Enemies_Footsteps_Metal\SFX_Movement_Enemies_Footsteps_Metal_Main\SFX_Movement_Enemies_Footsteps_Metal_03		36100
+	111680307	SFX_Movement_Enemies_Footsteps_Metal_09	Y:\TimeThief\TimeThief\.cache\Windows\SFX\SFX_Footsteps\SFX_Footsteps_Enemies\SFX_Movement_Enemies_Walk_Metal_09_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_Movement\SFX_Movement\SFX_Movement_Enemies\SFX_Movement_Enemies_Footsteps\SFX_Movement_Enemies_Footsteps_Metal\SFX_Movement_Enemies_Footsteps_Metal_Main\SFX_Movement_Enemies_Footsteps_Metal_09		36100
+	141259207	SFX_Movement_Enemies_Footsteps_Metal_04	Y:\TimeThief\TimeThief\.cache\Windows\SFX\SFX_Footsteps\SFX_Footsteps_Enemies\SFX_Movement_Enemies_Walk_Metal_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_Movement\SFX_Movement\SFX_Movement_Enemies\SFX_Movement_Enemies_Footsteps\SFX_Movement_Enemies_Footsteps_Metal\SFX_Movement_Enemies_Footsteps_Metal_Main\SFX_Movement_Enemies_Footsteps_Metal_04		36100
+	163331611	SFX_Movement_Player_Footsteps_Metal_06	Y:\TimeThief\TimeThief\.cache\Windows\SFX\SFX_Footsteps\SFX_Footsteps_Player\SFX_Movement_Player_Walk_Metal_06_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_Movement\SFX_Movement\SFX_Movement_Player\SFX_Movement_Player_Walk\SFX_Movement_Player_Footsteps_Metal\SFX_Movement_Player_Footsteps_Metal_Main\SFX_Movement_Player_Footsteps_Metal_06		36100
+	220221295	SFX_Movement_Enemies_Footsteps_Metal_02	Y:\TimeThief\TimeThief\.cache\Windows\SFX\SFX_Footsteps\SFX_Footsteps_Enemies\SFX_Movement_Enemies_Walk_Metal_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_Movement\SFX_Movement\SFX_Movement_Enemies\SFX_Movement_Enemies_Footsteps\SFX_Movement_Enemies_Footsteps_Metal\SFX_Movement_Enemies_Footsteps_Metal_Main\SFX_Movement_Enemies_Footsteps_Metal_02		36100
+	232311037	SFX_Movement_Player_Footsteps_Metal_05	Y:\TimeThief\TimeThief\.cache\Windows\SFX\SFX_Footsteps\SFX_Footsteps_Player\SFX_Movement_Player_Walk_Metal_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_Movement\SFX_Movement\SFX_Movement_Player\SFX_Movement_Player_Walk\SFX_Movement_Player_Footsteps_Metal\SFX_Movement_Player_Footsteps_Metal_Main\SFX_Movement_Player_Footsteps_Metal_05		36100
+	353051995	SFX_Movement_Player_Footsteps_Metal_01	Y:\TimeThief\TimeThief\.cache\Windows\SFX\SFX_Footsteps\SFX_Footsteps_Player\SFX_Movement_Player_Walk_Metal_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_Movement\SFX_Movement\SFX_Movement_Player\SFX_Movement_Player_Walk\SFX_Movement_Player_Footsteps_Metal\SFX_Movement_Player_Footsteps_Metal_Main\SFX_Movement_Player_Footsteps_Metal_01		36100
+	386688991	SFX_Movement_Player_Footsteps_Metal_07	Y:\TimeThief\TimeThief\.cache\Windows\SFX\SFX_Footsteps\SFX_Footsteps_Player\SFX_Movement_Player_Walk_Metal_07_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_Movement\SFX_Movement\SFX_Movement_Player\SFX_Movement_Player_Walk\SFX_Movement_Player_Footsteps_Metal\SFX_Movement_Player_Footsteps_Metal_Main\SFX_Movement_Player_Footsteps_Metal_07		36100
+	491012235	SFX_Movement_Enemies_Footsteps_Metal_07	Y:\TimeThief\TimeThief\.cache\Windows\SFX\SFX_Footsteps\SFX_Footsteps_Enemies\SFX_Movement_Enemies_Walk_Metal_07_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_Movement\SFX_Movement\SFX_Movement_Enemies\SFX_Movement_Enemies_Footsteps\SFX_Movement_Enemies_Footsteps_Metal\SFX_Movement_Enemies_Footsteps_Metal_Main\SFX_Movement_Enemies_Footsteps_Metal_07		36100
+	493534952	SFX_Movement_Enemies_Footsteps_Metal_10	Y:\TimeThief\TimeThief\.cache\Windows\SFX\SFX_Footsteps\SFX_Footsteps_Enemies\SFX_Movement_Enemies_Walk_Metal_10_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_Movement\SFX_Movement\SFX_Movement_Enemies\SFX_Movement_Enemies_Footsteps\SFX_Movement_Enemies_Footsteps_Metal\SFX_Movement_Enemies_Footsteps_Metal_Main\SFX_Movement_Enemies_Footsteps_Metal_10		36100
+	567206997	SFX_Movement_Player_Footsteps_Metal_08	Y:\TimeThief\TimeThief\.cache\Windows\SFX\SFX_Footsteps\SFX_Footsteps_Player\SFX_Movement_Player_Walk_Metal_08_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_Movement\SFX_Movement\SFX_Movement_Player\SFX_Movement_Player_Walk\SFX_Movement_Player_Footsteps_Metal\SFX_Movement_Player_Footsteps_Metal_Main\SFX_Movement_Player_Footsteps_Metal_08		36100
+	637720635	SFX_Movement_Enemies_Footsteps_Metal_06	Y:\TimeThief\TimeThief\.cache\Windows\SFX\SFX_Footsteps\SFX_Footsteps_Enemies\SFX_Movement_Enemies_Walk_Metal_06_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_Movement\SFX_Movement\SFX_Movement_Enemies\SFX_Movement_Enemies_Footsteps\SFX_Movement_Enemies_Footsteps_Metal\SFX_Movement_Enemies_Footsteps_Metal_Main\SFX_Movement_Enemies_Footsteps_Metal_06		36100
+	673866557	SFX_Movement_Player_Footsteps_Metal_02	Y:\TimeThief\TimeThief\.cache\Windows\SFX\SFX_Footsteps\SFX_Footsteps_Player\SFX_Movement_Player_Walk_Metal_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_Movement\SFX_Movement\SFX_Movement_Player\SFX_Movement_Player_Walk\SFX_Movement_Player_Footsteps_Metal\SFX_Movement_Player_Footsteps_Metal_Main\SFX_Movement_Player_Footsteps_Metal_02		36100
+	707267067	SFX_Movement_Player_Footsteps_Metal_04	Y:\TimeThief\TimeThief\.cache\Windows\SFX\SFX_Footsteps\SFX_Footsteps_Player\SFX_Movement_Player_Walk_Metal_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_Movement\SFX_Movement\SFX_Movement_Player\SFX_Movement_Player_Walk\SFX_Movement_Player_Footsteps_Metal\SFX_Movement_Player_Footsteps_Metal_Main\SFX_Movement_Player_Footsteps_Metal_04		36100
+	716952085	SFX_Movement_Enemies_Footsteps_Metal_08	Y:\TimeThief\TimeThief\.cache\Windows\SFX\SFX_Footsteps\SFX_Footsteps_Enemies\SFX_Movement_Enemies_Walk_Metal_08_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_Movement\SFX_Movement\SFX_Movement_Enemies\SFX_Movement_Enemies_Footsteps\SFX_Movement_Enemies_Footsteps_Metal\SFX_Movement_Enemies_Footsteps_Metal_Main\SFX_Movement_Enemies_Footsteps_Metal_08		36100
+	781648017	SFX_Movement_Player_Footsteps_Metal_03	Y:\TimeThief\TimeThief\.cache\Windows\SFX\SFX_Footsteps\SFX_Footsteps_Player\SFX_Movement_Player_Walk_Metal_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_Movement\SFX_Movement\SFX_Movement_Player\SFX_Movement_Player_Walk\SFX_Movement_Player_Footsteps_Metal\SFX_Movement_Player_Footsteps_Metal_Main\SFX_Movement_Player_Footsteps_Metal_03		36100
+	1018691115	SFX_Movement_Enemies_Footsteps_Metal_05	Y:\TimeThief\TimeThief\.cache\Windows\SFX\SFX_Footsteps\SFX_Footsteps_Enemies\SFX_Movement_Enemies_Walk_Metal_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_Movement\SFX_Movement\SFX_Movement_Enemies\SFX_Movement_Enemies_Footsteps\SFX_Movement_Enemies_Footsteps_Metal\SFX_Movement_Enemies_Footsteps_Metal_Main\SFX_Movement_Enemies_Footsteps_Metal_05		36100
+	1067209122	SFX_Movement_Player_Footsteps_Metal_10	Y:\TimeThief\TimeThief\.cache\Windows\SFX\SFX_Footsteps\SFX_Footsteps_Player\SFX_Movement_Player_Walk_Metal_10_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\SFX_Movement\SFX_Movement\SFX_Movement_Player\SFX_Movement_Player_Walk\SFX_Movement_Player_Footsteps_Metal\SFX_Movement_Player_Footsteps_Metal_Main\SFX_Movement_Player_Footsteps_Metal_10		36100
 
