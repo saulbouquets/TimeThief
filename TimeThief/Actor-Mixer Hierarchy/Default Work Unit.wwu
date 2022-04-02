@@ -90,11 +90,16 @@
 																	<Modifier Name="" ID="{8D6486F7-B4CA-42A5-AFAA-9BEE6F94850C}">
 																		<PropertyList>
 																			<Property Name="Enabled" Type="bool" Value="True"/>
-																			<Property Name="Max" Type="Real64" Value="300"/>
+																			<Property Name="Max" Type="Real64" Value="600"/>
 																		</PropertyList>
 																	</Modifier>
 																</ModifierInfo>
 															</ModifierList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-3</Value>
+															</ValueList>
 														</Property>
 													</PropertyList>
 													<ReferenceList>
@@ -105,6 +110,77 @@
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
 														</Reference>
 													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="SFX_Player_Gun_Shot_01" ID="{3C5A511C-6CEB-4C86-A35E-71C8E2750D74}" ShortID="911551856">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="SFX_Player_Gun_Shot_01" ID="{6AB6F2F4-8631-443F-AD9A-B361533C7889}">
+																	<Language>SFX</Language>
+																	<AudioFile>SFX_Guns\SFX_Player_Gun_Shot_01.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="1072828489"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ObjectLists/>
+															<ActiveSourceList>
+																<ActiveSource Name="SFX_Player_Gun_Shot_01" ID="{6AB6F2F4-8631-443F-AD9A-B361533C7889}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="SFX_Player_Gun_Shot_02" ID="{35CE3219-4A3E-466D-A06E-5187D99BD921}" ShortID="747166264">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="SFX_Player_Gun_Shot_02" ID="{A4C6A1BC-CAF3-44FC-8AC9-524F1E784044}">
+																	<Language>SFX</Language>
+																	<AudioFile>SFX_Guns\SFX_Player_Gun_Shot_02.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="774681912"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ObjectLists/>
+															<ActiveSourceList>
+																<ActiveSource Name="SFX_Player_Gun_Shot_02" ID="{A4C6A1BC-CAF3-44FC-8AC9-524F1E784044}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="SFX_Player_Gun_Shot_03" ID="{A98C8936-8993-4449-B9E4-524339EF570C}" ShortID="6001452">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{504CEEB9-2A44-49C5-81D8-3BF261B1B14A}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8C4AB981-04D5-45D5-9B51-FB8F75052FB5}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="SFX_Player_Gun_Shot_03" ID="{FB8B246B-EF63-4C96-A885-814C5C786DC2}">
+																	<Language>SFX</Language>
+																	<AudioFile>SFX_Guns\SFX_Player_Gun_Shot_03.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="244490972"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ObjectLists/>
+															<ActiveSourceList>
+																<ActiveSource Name="SFX_Player_Gun_Shot_03" ID="{FB8B246B-EF63-4C96-A885-814C5C786DC2}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
 													<ObjectLists/>
 												</RandomSequenceContainer>
 												<RandomSequenceContainer Name="SFX_Weapon_Player_Shoot_Special" ID="{D468595A-D296-41DD-9F71-074DA97BAA7E}" ShortID="232689077">
@@ -731,11 +807,16 @@
 																					<Modifier Name="" ID="{1D6C0984-87DA-4874-9113-FB34692273C3}">
 																						<PropertyList>
 																							<Property Name="Enabled" Type="bool" Value="True"/>
-																							<Property Name="Max" Type="Real64" Value="300"/>
+																							<Property Name="Max" Type="Real64" Value="500"/>
 																						</PropertyList>
 																					</Modifier>
 																				</ModifierInfo>
 																			</ModifierList>
+																		</Property>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>-8</Value>
+																			</ValueList>
 																		</Property>
 																	</PropertyList>
 																	<ReferenceList>

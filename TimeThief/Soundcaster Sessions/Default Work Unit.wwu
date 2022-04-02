@@ -67,7 +67,7 @@
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Walk" ID="{D04D6272-674F-45B3-9326-A19591AE61B7}"/>
-						<CurrentSwitchRef Name="Enemies" ID="{E8532D9A-89D4-4C1A-9C72-BC7258D2F73B}"/>
+						<CurrentSwitchRef Name="Player" ID="{103A0212-EF68-4219-A4B7-3C1B4D1A510D}"/>
 						<CurrentSwitchRef Name="Loop" ID="{7E094AC4-1935-4F91-BBA4-9E98D38563CB}"/>
 						<CurrentSwitchRef Name="Metal" ID="{9995C882-0C8A-4CDB-A846-3B5CEF751E3D}"/>
 						<CurrentSwitchRef Name="NormalShoot" ID="{F517C692-1255-4E42-B9D7-68D8143740D3}"/>
